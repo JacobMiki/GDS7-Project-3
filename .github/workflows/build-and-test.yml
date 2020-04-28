@@ -15,7 +15,7 @@ jobs:
       fail-fast: false
       matrix:
         projectPath: 
-          - "./GDS7\\ Project\\ 3/"
+          - ./GDS7-Project-3
         unityVersion:
           - 2020.1.0b6
         targetPlatform:
@@ -36,18 +36,18 @@ jobs:
             Library-${{ matrix.projectPath }}-
             Library-
 
-      - name: Test play and edit mode
-        uses: webbertakken/unity-test-runner@v1.3
-        id: testRunner
-        with:
-          projectPath: ${{ matrix.projectPath }}
-          unityVersion: ${{ matrix.unityVersion }}
+      # - name: Test play and edit mode
+      #   uses: webbertakken/unity-test-runner@v1.3
+      #   id: testRunner
+      #   with:
+      #     projectPath: ${{ matrix.projectPath }}
+      #     unityVersion: ${{ matrix.unityVersion }}
 
-      - name: Upload test results as artifacts
-        uses: actions/upload-artifact@v1
-        with:
-          name: Test results (all modes)
-          path: ${{ steps.testRunner.outputs.artifactsPath }}
+      # - name: Upload test results as artifacts
+      #   uses: actions/upload-artifact@v1
+      #   with:
+      #     name: Test results (all modes)
+      #     path: ${{ steps.testRunner.outputs.artifactsPath }}
 
       - name: Build project
         uses: webbertakken/unity-builder@v0.11
