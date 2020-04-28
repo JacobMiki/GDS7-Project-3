@@ -17,7 +17,7 @@ jobs:
         projectPath:
           - GDS7\ Project\ 3
         unityVersion:
-          - ${{ secrets.UNITY_VERSION }}
+          - 2020.1.0b6
         targetPlatform:
           - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
           - StandaloneWindows64 # Build a Windows 64-bit standalone.
