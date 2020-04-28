@@ -39,8 +39,6 @@ jobs:
       - name: Test play and edit mode
         uses: webbertakken/unity-test-runner@v1.3
         id: testRunner
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           projectPath: ${{ matrix.projectPath }}
           unityVersion: ${{ matrix.unityVersion }}
@@ -53,8 +51,6 @@ jobs:
 
       - name: Build project
         uses: webbertakken/unity-builder@v0.11
-        env:
-          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           projectPath: ${{ matrix.projectPath }}
           unityVersion: ${{ matrix.unityVersion }}
