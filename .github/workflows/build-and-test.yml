@@ -14,8 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        projectPath:
-          - "GDS7 Project 3"
+        projectPath: './GDS7\ Project\ 3'
         unityVersion:
           - 2020.1.0b6
         targetPlatform:
