@@ -12,6 +12,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         [Header("Input Commands")]
         [SerializeField] private Command _move;
         [SerializeField] private Command _look;
+        [SerializeField] private Command _interact;
 
         public Vector2 LookDelta { get; private set; }
         public Vector3 MoveDirection { get; private set; }
@@ -41,6 +42,16 @@ namespace GDS7.Group1.Project3.Assets.Scripts
                 _inputActions.Player.Move.performed += OnMove;
                 _inputActions.Player.Move.canceled += OnMove;
             }
+
+            if (_interact != null)
+            {
+                _inputActions.Player.Interact.performed += OnInteract;
+            }
+        }
+
+        private void OnInteract(InputAction.CallbackContext obj)
+        {
+            _interact?.Execute();
         }
 
         private void OnLook(InputAction.CallbackContext context)
@@ -69,6 +80,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             {
                 _inputActions.Player.Move.performed -= OnMove;
                 _inputActions.Player.Move.canceled -= OnMove;
+            }
+            if (_interact != null)
+            {
+                _inputActions.Player.Interact.performed -= OnInteract;
             }
 
             _inputActions.Disable();
