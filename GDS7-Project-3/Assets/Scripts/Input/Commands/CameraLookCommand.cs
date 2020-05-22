@@ -4,23 +4,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Cinemachine;
 using UnityEngine;
 
 namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
 {
     class CameraLookCommand : Command
     {
-        [SerializeField] private Transform _cameraTarget;
-        [SerializeField] private float _horizontalSensitivity;
-        [SerializeField] private float _verticalSensitivity;
+        [SerializeField] private Transform _camera;
 
         private ILookInput _look;
+        private CinemachineFreeLook _freeLookCamera;
         private Coroutine _lookCoroutine;
 
 
         private void Awake()
         {
             _look = GetComponent<ILookInput>();
+            _freeLookCamera = _camera.GetComponent<CinemachineFreeLook>();
+            _freeLookCamera.m_XAxis.m_InputAxisName = "";
+            _freeLookCamera.m_YAxis.m_InputAxisName = "";
         }
 
         public override void Execute()
@@ -35,13 +38,15 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         {
             while (_look.LookDelta != Vector2.zero)
             {
-                var newX = _cameraTarget.eulerAngles.x + _look.LookDelta.y * Time.fixedDeltaTime * _verticalSensitivity;
-                var newY = _cameraTarget.eulerAngles.y + _look.LookDelta.x * Time.fixedDeltaTime * _horizontalSensitivity;
 
-                _cameraTarget.rotation = Quaternion.Euler(newX, newY, 0);
+                _freeLookCamera.m_XAxis.m_InputAxisValue = _look.LookDelta.x;
+                _freeLookCamera.m_YAxis.m_InputAxisValue = _look.LookDelta.y;
 
                 yield return null;
             }
+
+            _freeLookCamera.m_XAxis.m_InputAxisValue = 0;
+            _freeLookCamera.m_YAxis.m_InputAxisValue = 0;
 
             _lookCoroutine = null;
         }
