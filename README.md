@@ -1,5 +1,5 @@
 GDS7 Project 3
-==
+===
 
 A 3D TPP game project for 7th edition of Game Dev School.
 
