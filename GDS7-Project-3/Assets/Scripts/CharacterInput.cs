@@ -18,8 +18,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         public Vector2 LookDelta { get; private set; }
         public Vector3 MoveDirection { get; private set; }
 
-
-
         private PlayerInputActions _inputActions;
 
         private void Awake()
@@ -53,6 +51,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             {
                 _inputActions.Player.Jump.performed += OnJump;
             }
+
+            _inputActions.Player.Pause.performed += (a) => Application.Quit();
         }
 
         private void OnInteract(InputAction.CallbackContext obj)
