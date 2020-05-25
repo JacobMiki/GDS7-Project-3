@@ -15,10 +15,11 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         private Rigidbody _rigidbody;
         private Coroutine _moveCoroutine;
 
-        [SerializeField] private Transform _cameraTarget;
-        [SerializeField] private AnimationCurve _speed;
-        [SerializeField] private float _speedModifier = 1;
-        [SerializeField] private float _rotationSmoothing = 1;
+        [SerializeField] private Transform _camera;
+        [SerializeField] private float _speed;
+        [SerializeField] private float _turnSmoothTime;
+
+        private float _turnSmoothVelocity;
 
         private void Awake()
         {
@@ -39,12 +40,14 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         {
             while (_move.MoveDirection != Vector3.zero)
             {
-                var time = (Time.fixedDeltaTime * _speed.Evaluate(_move.MoveDirection.magnitude) * _speedModifier);
+                var targetAngle = Mathf.Atan2(_move.MoveDirection.x, _move.MoveDirection.z) * Mathf.Rad2Deg + _camera.eulerAngles.y;
+                var angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothVelocity, _turnSmoothTime);
 
-                var moveDirection = _cameraTarget.forward * _move.MoveDirection.z + _cameraTarget.right * _move.MoveDirection.x + _cameraTarget.up * _move.MoveDirection.y;
+                var moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
 
-                _rigidbody.MoveRotation(Quaternion.Lerp(_transform.rotation, Quaternion.LookRotation(new Vector3(moveDirection.x, 0, moveDirection.z), transform.up), _rotationSmoothing));
-                _rigidbody.MovePosition(_transform.position + _transform.forward * moveDirection.magnitude * time);
+                _rigidbody.MoveRotation(Quaternion.Euler(_transform.rotation.eulerAngles.x, angle, _transform.rotation.eulerAngles.z));
+                _rigidbody.MovePosition(_transform.position + moveDirection.normalized * _speed * Time.deltaTime);
+
 
                 yield return null;
             }

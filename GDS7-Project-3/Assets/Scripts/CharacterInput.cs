@@ -75,7 +75,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         private void OnMove(InputAction.CallbackContext context)
         {
             var value = context.ReadValue<Vector2>();
-            MoveDirection = new Vector3(value.x, 0, value.y);
+            MoveDirection = new Vector3(value.x, 0, value.y).normalized;
             _move?.Execute();
 
         }
