@@ -57,26 +57,38 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void OnInteract(InputAction.CallbackContext obj)
         {
-            _interact?.Execute();
+            if (_interact != null)
+            {
+                _interact.Execute();
+            }
         }
 
         private void OnJump(InputAction.CallbackContext obj)
         {
-            _jump?.Execute();
+            if (_jump != null)
+            {
+                _jump.Execute();
+            }
         }
 
         private void OnLook(InputAction.CallbackContext context)
         {
             var value = context.ReadValue<Vector2>();
             LookDelta = value;
-            _look?.Execute();
+            if (_look != null)
+            {
+                _look.Execute();
+            }
         }
 
         private void OnMove(InputAction.CallbackContext context)
         {
             var value = context.ReadValue<Vector2>();
             MoveDirection = new Vector3(value.x, 0, value.y).normalized;
-            _move?.Execute();
+            if (_move != null)
+            {
+                _move.Execute();
+            }
 
         }
 
