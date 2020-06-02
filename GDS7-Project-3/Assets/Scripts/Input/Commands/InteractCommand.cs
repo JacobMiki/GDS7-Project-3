@@ -12,8 +12,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
     class InteractCommand : Command
     {
         [SerializeField] private float _maxInteractDistance;
+        [SerializeField] private Animator _animator;
         public override void Execute()
         {
+            _animator.SetTrigger("Action_Swing");
             if (Physics.Raycast(transform.position, transform.forward, out var hitInfo, _maxInteractDistance))
             {
                 var interactable = hitInfo.collider.GetComponent<IInteractable>();
@@ -21,6 +23,4 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
             }
         }
     }
-
-
 }
