@@ -9,15 +9,20 @@ using UnityEngine;
 
 namespace GDS7.Group1.Project3.Assets.Scripts
 {
-    public class CharacterState : MonoBehaviour, IGroundedState, ISafeState
+    public class CharacterState : MonoBehaviour, IGroundedState, ISafeState, ITorchState
     {
         public bool IsGrounded { get; private set; }
         public bool IsSafe { get; set; }
+        public bool HasTorch { get { return _torch.activeSelf; } set { _torch.SetActive(value); } }
 
         [Header("Grounded state")]
         [SerializeField] private LayerMask _groundLayer;
         [SerializeField] private float _groundDistance = 0.1f;
         [SerializeField] private Animator _animator;
+
+        [Header("Torch state")]
+        [SerializeField] private GameObject _torch;
+        [SerializeField] private bool _hasTorchOnStart;
 
         private Transform _transform;
         private Transform _groundChecker;
@@ -26,6 +31,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         {
             _transform = transform;
             _groundChecker = _transform.GetChild(0);
+            HasTorch = _hasTorchOnStart;
         }
 
         private void FixedUpdate()

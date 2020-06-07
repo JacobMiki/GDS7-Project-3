@@ -42,7 +42,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: float.Smokiness
-    path: PlayerModel/Flames
+    path: PlayerModel/Torch/Flames
     classID: 2083052967
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -107,7 +107,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: float.Smokiness
-    path: PlayerModel/Flames
+    path: PlayerModel/Torch/Flames
     classID: 2083052967
     script: {fileID: 0}
   m_EulerEditorCurves: []
