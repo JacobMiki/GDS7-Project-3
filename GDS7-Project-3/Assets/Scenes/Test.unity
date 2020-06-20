@@ -14035,7 +14035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &228849018
 Transform:
   m_ObjectHideFlags: 0
@@ -35211,7 +35211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4343968986079676004, guid: f566deb3e77f1e74b91bb0c54dacf75f, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 0
+      value: 3.4511e-41
       objectReference: {fileID: 0}
     - target: {fileID: 4343968986079676004, guid: f566deb3e77f1e74b91bb0c54dacf75f, type: 3}
       propertyPath: m_BoundingSphereOverride.z
@@ -35219,7 +35219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4343968986079676004, guid: f566deb3e77f1e74b91bb0c54dacf75f, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 3.9e-44
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4343968986079676004, guid: f566deb3e77f1e74b91bb0c54dacf75f, type: 3}
       propertyPath: m_Range
@@ -82355,19 +82355,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10402502
+      value: -0.104025036
       objectReference: {fileID: 0}
     - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.2220052
+      value: -0.22200522
       objectReference: {fileID: 0}
     - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.02196601
+      value: 0.021966018
       objectReference: {fileID: 0}
     - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9692316
+      value: -0.9692316
       objectReference: {fileID: 0}
     - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -82443,15 +82443,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5776935466262607354, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.20595309
+      value: -0.20595314
       objectReference: {fileID: 0}
     - target: {fileID: 5776935466262607354, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.016351104
+      value: 0.016351111
       objectReference: {fileID: 0}
     - target: {fileID: 5776935466262607354, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.09030704
+      value: -0.090307064
       objectReference: {fileID: 0}
     - target: {fileID: 5776935466262607354, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -103183,7 +103183,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 2500
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: NaN, y: 8.3e-44, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 5.2e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0.8
   m_ShadowAngle: 0
@@ -106076,11 +106076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6050702942152121313, guid: 5dd20b05fc81e1d4db34f667ae814ac2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0892596
+      value: -0.08925962
       objectReference: {fileID: 0}
     - target: {fileID: 6050702942152121313, guid: 5dd20b05fc81e1d4db34f667ae814ac2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.22980632
+      value: 0.22980626
       objectReference: {fileID: 0}
     - target: {fileID: 6050702942152121313, guid: 5dd20b05fc81e1d4db34f667ae814ac2, type: 3}
       propertyPath: m_RootOrder
