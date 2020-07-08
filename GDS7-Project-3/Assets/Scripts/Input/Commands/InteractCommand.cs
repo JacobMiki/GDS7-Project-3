@@ -25,7 +25,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         {
             if (_torchState.HasTorch)
             {
-                _animator.SetTrigger("Action_Swing");
                 if (Physics.Raycast(transform.position, transform.forward, out var hitInfo, _maxInteractDistance))
                 {
                     var interactable = hitInfo.collider.GetComponent<IInteractable>();
