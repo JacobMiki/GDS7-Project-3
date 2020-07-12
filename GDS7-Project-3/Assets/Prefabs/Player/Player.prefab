@@ -249,6 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxInteractDistance: 0.6
+  _interactCooldown: 1
   _animator: {fileID: 1151703371837205966}
 --- !u!114 &1716026151
 MonoBehaviour:
