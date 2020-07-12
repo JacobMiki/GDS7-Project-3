@@ -8,8 +8,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Scene
     public class LevelLoader : MonoBehaviour
     {
         [SerializeField] private Level _level;
+        [SerializeField] private GameObject _loadingScreen;
         void Start()
         {
+            _loadingScreen.SetActive(true);
             StartCoroutine(StartAsync());
         }
 
@@ -23,20 +25,16 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Scene
         }
 
         public IEnumerator LoadLevel(Level level)
-        {          
+        {
             var levelScene = SceneManager.CreateScene(level.Name);
 
             foreach (var levelPart in level.Parts)
             {
-                var scene = SceneManager.GetSceneByName(levelPart.SceneName);
-                if (scene.isLoaded)
-                {
-                    yield return SceneManager.UnloadSceneAsync(scene);
-                }
                 yield return SceneManager.LoadSceneAsync(levelPart.SceneName, LoadSceneMode.Additive);
             }
 
             SceneManager.SetActiveScene(levelScene);
+            _loadingScreen.SetActive(false);
         }
 
         public IEnumerator UnloadLevel(Level level)
@@ -49,7 +47,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Scene
 
             foreach (var levelPart in level.Parts)
             {
-                scene = SceneManager.GetSceneByName(levelPart.SceneName);
+                scene = SceneManager.GetSceneByPath(levelPart.ScenePath);
                 if (scene.isLoaded)
                 {
                     yield return SceneManager.UnloadSceneAsync(scene);

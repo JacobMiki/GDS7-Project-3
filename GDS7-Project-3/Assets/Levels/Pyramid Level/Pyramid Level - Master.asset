@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669c306e964188e4e9ec087a84ae431d, type: 3}
   m_Name: Pyramid Level - Master
   m_EditorClassIdentifier: 
-  SceneName: Pyramid Level - Master
+  SceneName: Scenes/Pyramid Level - Master
+  ScenePath: Assets/Scenes/Pyramid Level - Master.unity
