@@ -18,6 +18,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         [SerializeField] private AudioClip[] _footsteps;
 
         [SerializeField] private int _maxFootprints;
+        [SerializeField] private float _offGroundDistance;
+
+        private bool _rightFootOffGround;
+        private bool _leftFootOffGround;
 
         private GameObject[] _footprintPool;
         private int _footprintIndex;
@@ -26,6 +30,46 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         {
             _footprintPool = new GameObject[_maxFootprints];
             _footprintIndex = 0;
+            _rightFootOffGround = false;
+            _leftFootOffGround = false;
+        }
+
+        private void LateUpdate()
+        {
+            bool _rightFootOnGround = Physics.Raycast(new Ray(_rightFoot.transform.position, Vector3.down), _offGroundDistance, LayerMask.GetMask("World"));
+            bool _leftFootOnGround = Physics.Raycast(new Ray(_leftFoot.transform.position, Vector3.down), _offGroundDistance, LayerMask.GetMask("World"));
+
+            if (_rightFootOffGround)
+            {
+                if (_rightFootOnGround)
+                {
+                    _rightFootOffGround = false;
+                    RightFootstep();
+                }
+            }
+            else
+            {
+                if (!_rightFootOnGround)
+                {
+                    _rightFootOffGround = true;
+                }
+            }
+
+            if (_leftFootOffGround)
+            {
+                if (_leftFootOnGround)
+                {
+                    _leftFootOffGround = false;
+                    LeftFootstep();
+                }
+            }
+            else
+            {
+                if (!_leftFootOnGround)
+                {
+                    _leftFootOffGround = true;
+                }
+            }
         }
 
         public void LeftFootstep()
@@ -46,7 +90,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
                 audioSource.PlayOneShot(clip);
             }
 
-            if (Physics.Raycast(foot.transform.position, Vector3.down, out var hit, 0.1f))
+            if (Physics.Raycast(foot.transform.position, Vector3.down, out var hit, _offGroundDistance))
             {
                 var footprintInstance = _footprintPool[_footprintIndex + skipIndex];
                 if (footprintInstance == null)
