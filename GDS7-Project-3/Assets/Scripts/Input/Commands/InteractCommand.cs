@@ -16,6 +16,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         [SerializeField] private float _maxInteractDistance;
         [SerializeField] private float _interactCooldown;
         [SerializeField] private Animator _animator;
+        [SerializeField] private AudioClip _swingSound;
+        [SerializeField] private AudioSource _audioSource;
 
         private ITorchState _torchState;
         private bool _canInteract = true;
@@ -31,6 +33,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
                 _canInteract = false;
                 StartCoroutine(Cooldown());
                 _animator.SetTrigger("Attack");
+                _audioSource.PlayOneShot(_swingSound);
                 if (Physics.Raycast(transform.position, transform.forward, out var hitInfo, _maxInteractDistance))
                 {
                     var interactable = hitInfo.collider.GetComponent<IInteractable>();
