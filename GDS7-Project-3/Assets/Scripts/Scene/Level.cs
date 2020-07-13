@@ -1,7 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
-using UnityEditor.SceneManagement;
 using UnityEngine;
 
 namespace GDS7.Group1.Project3.Assets.Scripts.Scene
