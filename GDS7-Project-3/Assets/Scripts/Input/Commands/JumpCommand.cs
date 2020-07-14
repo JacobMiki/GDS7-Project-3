@@ -10,6 +10,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         private IGroundedState _groundedState;
         private IMoveInput _moveInput;
 
+        [SerializeField] private Animator _animator;
         [SerializeField] private float _jumpHeight;
         [SerializeField] private float _jumpForwardForce;
 
@@ -26,6 +27,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
 
             if (_groundedState.IsGrounded)
             {
+                _animator.SetTrigger("Jump");
                 _rigidbody.AddForce(Vector3.up * Mathf.Sqrt(_jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
                 _rigidbody.AddForce(_moveInput.MoveDirection.magnitude * _transform.forward * _jumpForwardForce, ForceMode.VelocityChange);
             }

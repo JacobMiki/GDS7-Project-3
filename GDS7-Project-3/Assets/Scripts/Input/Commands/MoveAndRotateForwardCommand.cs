@@ -14,8 +14,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         private IMoveInput _move;
         private Rigidbody _rigidbody;
         private Coroutine _moveCoroutine;
+        private Transform _camera;
 
-        [SerializeField] private Transform _camera;
         [SerializeField] private float _speed;
         [SerializeField] private float _turnSmoothTime;
 
@@ -26,6 +26,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
             _transform = transform;
             _move = GetComponent<IMoveInput>();
             _rigidbody = GetComponent<Rigidbody>();
+            _camera = GameObject.FindGameObjectWithTag("MainCamera").transform;
         }
 
         public override void Execute()
