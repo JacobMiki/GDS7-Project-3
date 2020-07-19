@@ -15,7 +15,7 @@ TagManager:
   - 
   - PostProcessing
   - World
-  - Encounter
+  - Interactable
   - NonJump
   - 
   - 

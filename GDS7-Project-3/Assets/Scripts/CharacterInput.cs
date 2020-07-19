@@ -52,7 +52,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts
                 _inputActions.Player.Jump.performed += OnJump;
             }
 
-            _inputActions.Player.Pause.performed += (a) => Application.Quit();
+            _inputActions.Player.Pause.performed += (a) => {
+                Cursor.visible = !Cursor.visible;
+                Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
+            };
         }
 
         private void OnInteract(InputAction.CallbackContext obj)
@@ -73,11 +76,14 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void OnLook(InputAction.CallbackContext context)
         {
-            var value = context.ReadValue<Vector2>();
-            LookDelta = value;
-            if (_look != null)
+            if (Cursor.lockState == CursorLockMode.Locked)
             {
-                _look.Execute();
+                var value = context.ReadValue<Vector2>();
+                LookDelta = value;
+                if (_look != null)
+                {
+                    _look.Execute();
+                }
             }
         }
 

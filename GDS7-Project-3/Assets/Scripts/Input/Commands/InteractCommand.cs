@@ -18,6 +18,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         [SerializeField] private Animator _animator;
         [SerializeField] private AudioClip _swingSound;
         [SerializeField] private AudioSource _audioSource;
+        [SerializeField] private LayerMask _interactionLayers;
 
         private ITorchState _torchState;
         private bool _canInteract = true;
@@ -26,6 +27,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         {
             _torchState = GetComponent<ITorchState>();
         }
+
         public override void Execute()
         {
             if (_torchState.HasTorch && _canInteract)
@@ -34,9 +36,11 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
                 StartCoroutine(Cooldown());
                 _animator.SetTrigger("Attack");
                 _audioSource.PlayOneShot(_swingSound);
-                if (Physics.Raycast(transform.position, transform.forward, out var hitInfo, _maxInteractDistance))
+                if (Physics.Raycast(transform.position, transform.forward, out var hitInfo, _maxInteractDistance, _interactionLayers))
                 {
                     var interactable = hitInfo.collider.GetComponent<IInteractable>();
+                    Debug.Log(interactable, this);
+
                     interactable?.Interact();
                 }
             }
