@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5783aaff9cae24d8545cdb96e4733b, type: 3}
+  m_Name: Pyramid Level
+  m_EditorClassIdentifier: 
+  Name: Pyramid Level
+  Parts:
+  - {fileID: 11400000, guid: 4fd912ad54e25fb4e81bc4e53be4579f, type: 2}
+  - {fileID: 11400000, guid: c8c8ee8470506bf48aaa59fa6fbb6696, type: 2}
+  - {fileID: 11400000, guid: 518dd25e77f5fb641a6c908ad1b902c1, type: 2}
+  - {fileID: 11400000, guid: 61cd9145fdc5df441a5ec4ced051b80d, type: 2}
+  - {fileID: 11400000, guid: d4808775ed20b324db9347c6b80c5125, type: 2}
+  - {fileID: 11400000, guid: 66cc551b11b85d44b9d08bdf14555a07, type: 2}

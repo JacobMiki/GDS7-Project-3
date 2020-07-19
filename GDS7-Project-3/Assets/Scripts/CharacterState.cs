@@ -18,7 +18,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         [Header("Grounded state")]
         [SerializeField] private LayerMask _groundLayer;
         [SerializeField] private float _groundDistance = 0.1f;
-        [SerializeField] private Animator _animator;
 
         [Header("Torch state")]
         [SerializeField] private GameObject _torch;
@@ -37,21 +36,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         private void FixedUpdate()
         {
             IsGrounded = Physics.CheckSphere(_groundChecker.position, _groundDistance, _groundLayer, QueryTriggerInteraction.Ignore);
-        }
-
-        public void AddSwing()
-        {
-            var name = "Torch_SwingsInLast2s";
-            _animator.SetInteger(name, _animator.GetInteger(name) + 1);
-            StartCoroutine(RemoveSwingIn(2));
-        }
-
-        private IEnumerator RemoveSwingIn(float s)
-        {
-            yield return new WaitForSeconds(s);
-            var name = "Torch_SwingsInLast2s";
-            _animator.SetInteger(name, _animator.GetInteger(name) - 1);
-
         }
     }
 }
