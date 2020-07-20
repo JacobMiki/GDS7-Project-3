@@ -8,10 +8,16 @@ using UnityEngine.AI;
 public class Cheats : MonoBehaviour
 {
     [SerializeField] private Vector3 _labirynthTarget;
+    [SerializeField] private Vector3 _labirynth2Target;
 
     public void MovePlayerToLabirynth()
     {
         GameObject.Find("Player").transform.position = _labirynthTarget;
+    }
+    
+    public void MovePlayerToLabirynth2()
+    {
+        GameObject.Find("Player").transform.position = _labirynth2Target;
     }
 
     public void TogglePlayerTorch()

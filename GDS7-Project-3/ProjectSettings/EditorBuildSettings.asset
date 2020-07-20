@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pyramid Level - Exit Corridor.unity
     guid: cb93c46e2aa59be4a9dfe96f549cddb6
+  - enabled: 1
+    path: Assets/Scenes/Pyramid Level - Labyrinth 2 (Alt).unity
+    guid: 966fceca25d093d479b83763e7884e42
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 3b4b1193620f5dc44bac40426b2bcf56, type: 2}
