@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using GDS7.Group1.Project3.Assets.Scripts.Input;
@@ -18,6 +19,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         public Vector2 LookDelta { get; private set; }
         public Vector3 MoveDirection { get; private set; }
 
+        public bool InputsEnabled { get; set; }
+
         private PlayerInputActions _inputActions;
 
         private void Awake()
@@ -25,6 +28,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             _inputActions = new PlayerInputActions();
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
+            InputsEnabled = true;
         }
 
         private void OnEnable()
@@ -60,7 +64,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void OnInteract(InputAction.CallbackContext obj)
         {
-            if (_interact != null)
+            if (_interact != null && InputsEnabled)
             {
                 _interact.Execute();
             }
@@ -68,7 +72,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void OnJump(InputAction.CallbackContext obj)
         {
-            if (_jump != null)
+            if (_jump != null && InputsEnabled)
             {
                 _jump.Execute();
             }
@@ -88,13 +92,21 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         }
 
         private void OnMove(InputAction.CallbackContext context)
-        {
-            var value = context.ReadValue<Vector2>();
-            MoveDirection = new Vector3(value.x, 0, value.y).normalized;
-            if (_move != null)
+        {   
+            if (InputsEnabled)
             {
-                _move.Execute();
+                var value = context.ReadValue<Vector2>();
+                MoveDirection = new Vector3(value.x, 0, value.y).normalized;
+                if (_move != null)
+                {
+                    _move.Execute();
+                }
             }
+            else
+            {
+                MoveDirection = new Vector3(0, 0, 0);
+            }
+
 
         }
 
