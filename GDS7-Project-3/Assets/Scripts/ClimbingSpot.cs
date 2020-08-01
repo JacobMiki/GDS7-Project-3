@@ -25,6 +25,7 @@ public class ClimbingSpot : MonoBehaviour
             _isClimbing = true;
             other.GetComponent<CharacterInput>().InputsEnabled = false;
             other.GetComponent<Rigidbody>().isKinematic = true;
+            other.GetComponent<Collider>().enabled = false;
             StartCoroutine(MoveToTarget(other.transform));
         }
     }
@@ -38,6 +39,7 @@ public class ClimbingSpot : MonoBehaviour
         }
         other.GetComponent<CharacterInput>().InputsEnabled = true;
         other.GetComponent<Rigidbody>().isKinematic = false;
+        other.GetComponent<Collider>().enabled = true;
         _isClimbing = false;
     }
 }
