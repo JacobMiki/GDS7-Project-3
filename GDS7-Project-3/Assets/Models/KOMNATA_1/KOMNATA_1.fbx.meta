@@ -2,7 +2,61 @@ fileFormatVersion: 2
 guid: 777dbcaefd61f414694c56b5dda8ff89
 ModelImporter:
   serializedVersion: 20100
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -7316248029836431181
+    second: DOOR1|CameraAction.001
+  - first:
+      74: -8649243047588085579
+    second: DOOR1|Cube.020Action
+  - first:
+      74: -3667156054245181797
+    second: DOOR1|DOOR 1Action
+  - first:
+      74: -8346949300694791976
+    second: DOOR1|KOLUMNA 1Action
+  - first:
+      74: 3572025998781107558
+    second: DOOR1|MUMIAAction
+  - first:
+      74: 9181304575194346449
+    second: DOOR1|POCHODNIA_ZACZEP.003Action
+  - first:
+      74: -6720701393138588989
+    second: DOOR1|POCHODNIA_ZACZEP.004Action
+  - first:
+      74: 8995488193287741110
+    second: DOOR1|SphereAction
+  - first:
+      74: -2901933373689716068
+    second: DOOR1|SpotAction.002
+  - first:
+      74: -8084853459162903541
+    second: KORYTARZ1|CameraAction.001
+  - first:
+      74: -8311762111292080568
+    second: KORYTARZ1|Cube.020Action
+  - first:
+      74: 2425937279796201722
+    second: KORYTARZ1|DOOR 1Action
+  - first:
+      74: -2524077687470404917
+    second: KORYTARZ1|KOLUMNA 1Action
+  - first:
+      74: -8567865281112252040
+    second: KORYTARZ1|MUMIAAction
+  - first:
+      74: -3997036469699418580
+    second: KORYTARZ1|POCHODNIA_ZACZEP.003Action
+  - first:
+      74: -2294796322250709838
+    second: KORYTARZ1|POCHODNIA_ZACZEP.004Action
+  - first:
+      74: -8163889235388317127
+    second: KORYTARZ1|SphereAction
+  - first:
+      74: 2705158557360540620
+    second: KORYTARZ1|SpotAction.002
   externalObjects: {}
   materials:
     materialImportMode: 1
