@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
 {
     public class EnemyController : MonoBehaviour
     {
+        [SerializeField] private Animator _animator;
         [SerializeField] private NavMeshAgent _agent;
-        // Start is called before the first frame update
+        [SerializeField] private bool _activateOnStart;
+        [SerializeField] private UnityEvent _onDefeat = new UnityEvent();
+
+        private bool _active = false;
+        private GameObject _player;
+
         void Start()
         {
             _agent.enabled = false;
@@ -19,18 +26,48 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
 
             }
 
+            if (_activateOnStart)
+            {
+                Activate();
+            }
         }
 
-        // Update is called once per frame
+        public void Activate()
+        {
+            _player = GameObject.Find("Player");
+            _active = true;
+            _animator.SetBool("IsRunning", true);
+            FindTarget();
+        }
+
+        public void Deactivate()
+        {
+            _active = false;
+            _animator.SetBool("IsRunning", false);
+            _agent.destination = transform.position;
+        }
+
+        public void Defeat()
+        {
+            _onDefeat.Invoke();
+            _animator.SetBool("IsRunning", false);
+            Destroy(gameObject);
+        }
+
+        private void FindTarget()
+        {
+            if (_player)
+            {
+                _agent.destination = _player.transform.position;
+            }
+        }
+
+
         void Update()
         {
-            if (_agent.isActiveAndEnabled && _agent.isOnNavMesh)
+            if (_active && _agent.isActiveAndEnabled && _agent.isOnNavMesh)
             {
-                var player = GameObject.Find("Player");
-                if (player)
-                {
-                    _agent.destination = player.transform.position;
-                }
+                FindTarget();
             }
         }
     }
