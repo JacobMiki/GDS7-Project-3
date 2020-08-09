@@ -32,6 +32,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
     {
         [SerializeField] private BrazierPuzzlePiece[] _pieces;
         [SerializeField] private UnityEvent _onPuzzleSolve;
+        [SerializeField] private UnityEvent _afterPuzzleUpdate;
 
         public bool Solved { get; set; }
 
@@ -78,6 +79,12 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
 
             Debug.Log("Updating puzzle... DONE", this);
+            _afterPuzzleUpdate.Invoke();
+        }
+
+        public IEnumerable<BrazierPuzzlePiece> GetUnlitPieces()
+        {
+            return _pieces.Where(piece => !piece.Brasier.IsLightOn);
         }
     }
 }

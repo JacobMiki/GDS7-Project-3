@@ -456,8 +456,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2726355262620827356}
-  m_LocalRotation: {x: -0.00045907492, y: -0, z: -0, w: -0.9999999}
-  m_LocalPosition: {x: 0, y: 0, z: 0.084000975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 676224154}
@@ -476,7 +476,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 33.501606
-  m_Range: 77.93
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -520,7 +520,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 1266
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 77.93}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 10}
   m_UseBoundingSphereOverride: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -555,8 +555,8 @@ MonoBehaviour:
   m_AffectDiffuse: 1
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
-  m_ShapeWidth: 0.45036316
-  m_ShapeHeight: 0.5
+  m_ShapeWidth: 0.3
+  m_ShapeHeight: 0.3
   m_AspectRatio: 1
   m_ShapeRadius: 0.025
   m_SoftnessScale: 1
