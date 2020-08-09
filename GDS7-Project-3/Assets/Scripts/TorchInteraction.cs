@@ -8,12 +8,19 @@ public class TorchInteraction : MonoBehaviour
     [SerializeField] private Animator _animator;
     [SerializeField] private AudioClip _swingSound;
     [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private Collider _interactionTriggerCollider;
 
     private bool _isSwinging = false;
+
+    private void Start()
+    {
+        _interactionTriggerCollider.enabled = false;
+    }
 
     public void StartSwing()
     {
         _isSwinging = true;
+        _interactionTriggerCollider.enabled = true;
         _animator.SetTrigger("Attack");
         _audioSource.PlayOneShot(_swingSound);
     }
@@ -21,9 +28,10 @@ public class TorchInteraction : MonoBehaviour
     public void EndSwing()
     {
         _isSwinging = false;
+        _interactionTriggerCollider.enabled = false;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (!_isSwinging)
         {

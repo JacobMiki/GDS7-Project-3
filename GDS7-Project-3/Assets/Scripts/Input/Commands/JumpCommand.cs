@@ -16,6 +16,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         [SerializeField] private float _jumpForwardForce;
         [SerializeField] private float _takeoffTime;
 
+        private bool _jumpDisabled = false;
+
         private void Awake()
         {
             _transform = transform;
@@ -27,9 +29,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         public override void Execute()
         {
 
-            if (_groundedState.IsGrounded)
+            if (!_jumpDisabled && _groundedState.IsGrounded)
             {
                 _animator.SetTrigger("Jump");
+                _jumpDisabled = true;
                 StartCoroutine(JumpAfterTakeoff());
             }
         }
@@ -37,6 +40,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         public IEnumerator JumpAfterTakeoff()
         {
             yield return new WaitForSeconds(_takeoffTime);
+            _jumpDisabled = false;
             _rigidbody.AddForce(Vector3.up * Mathf.Sqrt(_jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
             _rigidbody.AddForce(_moveInput.MoveDirection.magnitude * _transform.forward * _jumpForwardForce, ForceMode.VelocityChange);
         }

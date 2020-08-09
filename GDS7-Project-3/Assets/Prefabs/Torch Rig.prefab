@@ -236,6 +236,7 @@ MonoBehaviour:
   _animator: {fileID: 0}
   _swingSound: {fileID: 8300000, guid: 8f8ec6db01098e24790479b110eed513, type: 3}
   _audioSource: {fileID: 873667794156119098}
+  _interactionTriggerCollider: {fileID: 8772064924146350239}
 --- !u!1 &4957728431870536651
 GameObject:
   m_ObjectHideFlags: 0
