@@ -24476,7 +24476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 8137364971290440181, guid: f8560b4556f9862429f8775f91754fa3, type: 3}
-  _distanceFromPlayer: 8
+  _distanceFromPlayer: 5
   _navMeshTolerance: 1
   _coneAngle: 85
   _timeToSpawn: 8
