@@ -3,7 +3,17 @@ guid: 43808e10df9e1f24ba255524c989af7f
 ModelImporter:
   serializedVersion: 20100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 8a19684a4e913734db4d250bece81b87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ProBuilder_Default_HDRP
+    second: {fileID: 2100000, guid: 9ec6749e4a8864448a551d9126dcb0c9, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
