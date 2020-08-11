@@ -19,7 +19,7 @@ ModelImporter:
       name: PLAYER_MATERIAL
     second: {fileID: 2100000, guid: f6fc365e834fad04da70d94cb057049d, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -50,7 +50,7 @@ ModelImporter:
       takeName: Scene
       internalID: 0
       firstFrame: 1
-      lastFrame: 25
+      lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -78,16 +78,16 @@ ModelImporter:
       name: Player_Jump_InAir
       takeName: Scene
       internalID: 0
-      firstFrame: 25
-      lastFrame: 25
+      firstFrame: 14
+      lastFrame: 15
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -107,8 +107,8 @@ ModelImporter:
       name: Player_Jump_Landing
       takeName: Scene
       internalID: 0
-      firstFrame: 25
-      lastFrame: 40
+      firstFrame: 15
+      lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

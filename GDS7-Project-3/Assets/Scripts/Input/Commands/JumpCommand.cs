@@ -41,8 +41,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         {
             yield return new WaitForSeconds(_takeoffTime);
             _jumpDisabled = false;
+            // _rigidbody.AddForce(_moveInput.MoveDirection.magnitude * _transform.forward * _jumpForwardForce, ForceMode.VelocityChange);
             _rigidbody.AddForce(Vector3.up * Mathf.Sqrt(_jumpHeight * -2f * Physics.gravity.y), ForceMode.VelocityChange);
-            _rigidbody.AddForce(_moveInput.MoveDirection.magnitude * _transform.forward * _jumpForwardForce, ForceMode.VelocityChange);
         }
     }
 }

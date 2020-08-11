@@ -19,7 +19,7 @@ ModelImporter:
       name: PLAYER_MATERIAL
     second: {fileID: 2100000, guid: f6fc365e834fad04da70d94cb057049d, type: 2}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
     materialSearch: 1
     materialLocation: 1

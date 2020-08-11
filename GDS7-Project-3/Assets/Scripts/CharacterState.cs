@@ -12,6 +12,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
     public class CharacterState : MonoBehaviour, IGroundedState, ISafeState, ITorchState
     {
         public bool IsGrounded { get; private set; }
+        public float DistanceFromGround { get; private set; }
         public bool IsSafe { get; set; }
         public bool HasTorch { get { return _torch.activeSelf; } set { _torch.SetActive(value); } }
 
@@ -35,7 +36,15 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void FixedUpdate()
         {
-            IsGrounded = Physics.CheckSphere(_groundChecker.position, _groundDistance, _groundLayer, QueryTriggerInteraction.Ignore);
+            if (Physics.SphereCast(_groundChecker.position, 0.1f, Vector3.down, out var hit, 1f, _groundLayer, QueryTriggerInteraction.Ignore))
+            {
+                DistanceFromGround = hit.distance;
+                IsGrounded = DistanceFromGround <= _groundDistance;
+            }
+            else
+            {
+                IsGrounded = false;
+            }
         }
     }
 }

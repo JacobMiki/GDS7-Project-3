@@ -9,5 +9,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts.State
     public interface IGroundedState
     {
         bool IsGrounded { get; }
+        float DistanceFromGround { get; }
     }
 }

@@ -31,6 +31,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             _animator.SetBool("IsGrounded", _groundedState.IsGrounded);
             _animator.SetBool("IsWalking", _moveInput.MoveDirection.magnitude > 0 && _moveInput.MoveDirection.magnitude < _runningThreshold);
             _animator.SetBool("IsRunning", _moveInput.MoveDirection.magnitude >= _runningThreshold);
+            _animator.SetFloat("DistanceFromGround", _groundedState.DistanceFromGround);
         }
     }
 }
