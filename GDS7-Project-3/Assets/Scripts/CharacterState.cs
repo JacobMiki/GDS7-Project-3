@@ -14,6 +14,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         public bool IsGrounded { get; private set; }
         public float DistanceFromGround { get; private set; }
         public bool IsSafe { get; set; }
+        public Vector3 LastSafePosition { get; set; }
         public bool HasTorch { get { return _torch.activeSelf; } set { _torch.SetActive(value); } }
 
         [Header("Grounded state")]

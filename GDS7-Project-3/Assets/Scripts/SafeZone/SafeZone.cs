@@ -15,6 +15,7 @@ public class SafeZone : MonoBehaviour
         {
             var safeState = other.GetComponent<ISafeState>();
             safeState.IsSafe = true;
+            safeState.LastSafePosition = other.transform.position;
         }
     }
 

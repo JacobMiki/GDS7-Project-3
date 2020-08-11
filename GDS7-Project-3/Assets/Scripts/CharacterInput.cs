@@ -57,8 +57,12 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             }
 
             _inputActions.Player.Pause.performed += (a) => {
+#if DEBUG
                 Cursor.visible = !Cursor.visible;
                 Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
+#else
+                Application.Quit();
+#endif
             };
         }
 

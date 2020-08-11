@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GDS7.Group1.Project3.Assets.Scripts;
 using GDS7.Group1.Project3.Assets.Scripts.State;
 using UnityEngine;
 
@@ -16,6 +17,12 @@ namespace GDS7.Group1.Project3.Assets
                 var torchState = other.GetComponent<ITorchState>();
                 torchState.HasTorch = false;
                 Destroy(_enemy, 1f);
+
+                var gameOverHandler = other.GetComponent<GameOverHandler>();
+                if (gameOverHandler)
+                {
+                    gameOverHandler.GameOver();
+                }
             }
         }
     }

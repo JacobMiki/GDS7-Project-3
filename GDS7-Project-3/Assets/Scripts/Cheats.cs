@@ -10,6 +10,13 @@ public class Cheats : MonoBehaviour
     [SerializeField] private Vector3 _labirynthTarget;
     [SerializeField] private Vector3 _exitTarget;
 
+    public void Awake()
+    {
+#if !DEBUG
+        gameObject.SetActive(false);
+#endif
+    }
+
     public void MovePlayerToLabirynth()
     {
         GameObject.Find("Player").transform.position = _labirynthTarget;
