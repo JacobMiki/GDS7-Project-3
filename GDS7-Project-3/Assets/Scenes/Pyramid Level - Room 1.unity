@@ -346,7 +346,7 @@ PrefabInstance:
     - target: {fileID: 5083846721564792370, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1355189986}
+      objectReference: {fileID: 0}
     - target: {fileID: 5083846721564792370, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: GDS7.Group1.Project3.Assets.Scripts.Door, Assembly-CSharp
@@ -434,6 +434,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4537489535148305108, guid: 8f3aa2665d47d4843bc5945fc615e728, type: 3}
   m_PrefabInstance: {fileID: 4407053563985225073}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &743688876 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7512743603431946914, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+  m_PrefabInstance: {fileID: 187771958}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &743688880
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743688876}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a1b9901dbc971b54bba9014a85834928, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &775222050
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -740,23 +764,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2073366208907838465, guid: 78c6d545c47169a46a37ccf82924ad46, type: 3}
   m_PrefabInstance: {fileID: 2073366207939719244}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1355189981 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -8382408827406067984, guid: 777dbcaefd61f414694c56b5dda8ff89, type: 3}
-  m_PrefabInstance: {fileID: 124885785}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1355189986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1355189981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07f4427eeaf2bba42b806689d3ab84c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1449635975
 GameObject:
   m_ObjectHideFlags: 0
