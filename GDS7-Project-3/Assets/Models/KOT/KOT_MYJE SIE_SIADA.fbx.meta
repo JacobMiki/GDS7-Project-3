@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: MYJE_SIE_SIADA
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KOT_MATERIAL
+    second: {fileID: 2100000, guid: dd5402fe4ef2ea3468f73caaad21a9b7, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
