@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 4343968986079676005}
   - component: {fileID: 4343968986079676004}
   - component: {fileID: 4343968986079676002}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ray at doors
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4343968986079676005
 Transform:
@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4343968986079676007}
   m_LocalRotation: {x: 0.8796144, y: 0.053024624, z: -0.10099701, w: 0.46180794}
-  m_LocalPosition: {x: 33.9, y: 91.1, z: 20.3}
+  m_LocalPosition: {x: 33.9, y: 52, z: 20.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7312225459075867275}
@@ -44,8 +44,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1843968.1
-  m_Range: 109.43
+  m_Intensity: 4320000
+  m_Range: 109.58
   m_SpotAngle: 3.2
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -89,7 +89,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 2500
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 30.806314}
+  m_BoundingSphereOverride: {x: 1.2581e-41, y: 7.7e-44, z: 0, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0.8
   m_ShadowAngle: 0
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_AreaLightShape: 0
   m_Intensity: 1200
   m_EnableSpotReflector: 0
-  m_LuxAtDistance: 39.2
+  m_LuxAtDistance: 60
   m_InnerSpotPercent: 0
   m_LightDimmer: 1
   m_VolumetricDimmer: 1
@@ -215,7 +215,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7312225459075867275
 Transform:
@@ -226,7 +226,7 @@ Transform:
   m_GameObject: {fileID: 4343968986669454688}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.69, z: 1}
   m_Children:
   - {fileID: 4343968986079676005}
   - {fileID: 4343968987311804645}
@@ -250,7 +250,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4343968986777580511
 Transform:
@@ -277,8 +277,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 42.55, y: 6.7, z: 46.06}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 42.951584, y: 6.6999984, z: 41.993385}
+  m_Center: {x: -0.2007904, y: 0, z: 2.309887}
 --- !u!114 &4343968986777580508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -295,7 +295,7 @@ MonoBehaviour:
   priority: 1
   blendDistance: 1
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: d13f8c730d18f1c4388c2df186d61549, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 2335e44f50db3f748a541bd7f0b69f5f, type: 2}
 --- !u!1 &4343968987311804644
 GameObject:
   m_ObjectHideFlags: 0
@@ -307,12 +307,12 @@ GameObject:
   - component: {fileID: 4343968987311804645}
   - component: {fileID: 4343968987311804643}
   - component: {fileID: 4343968987311804642}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wall tops highlights
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4343968987311804645
 Transform:
@@ -322,7 +322,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4343968987311804644}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 19.07, y: 6.2, z: -22.9}
+  m_LocalPosition: {x: 19.07, y: 3.69, z: -17.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7312225459075867275}
@@ -340,8 +340,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 8.798074
-  m_Range: 2.24
+  m_Intensity: 3.708732
+  m_Range: 2.25
   m_SpotAngle: 1.6
   m_InnerSpotAngle: 1
   m_CookieSize: 10
@@ -383,9 +383,9 @@ Light:
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 70, y: 40}
   m_BounceIntensity: 1
-  m_ColorTemperature: 2500
+  m_ColorTemperature: 1768
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 31.523918}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 33.349483}
   m_UseBoundingSphereOverride: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_PointlightHDType: 1
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 50000
+  m_Intensity: 25000
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 150
   m_InnerSpotPercent: 50
@@ -421,7 +421,7 @@ MonoBehaviour:
   m_AffectSpecular: 1
   m_NonLightmappedOnly: 0
   m_ShapeWidth: 53.01713
-  m_ShapeHeight: 34.12057
+  m_ShapeHeight: 40.47142
   m_AspectRatio: 1
   m_ShapeRadius: 0
   m_SoftnessScale: 1
