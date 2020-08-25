@@ -11,6 +11,9 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
         [SerializeField] private Animator _animator;
         [SerializeField] private NavMeshAgent _agent;
         [SerializeField] private bool _activateOnStart;
+        [SerializeField] private float _deathAnimTime;
+        [SerializeField] private GameObject _killZone;
+        [SerializeField] private GameObject _deathParticles;
         [SerializeField] private UnityEvent _onDefeat = new UnityEvent();
 
         private bool _active = false;
@@ -49,9 +52,13 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
 
         public void Defeat()
         {
+            _active = false;
+            _killZone.SetActive(false);
             _onDefeat.Invoke();
-            _animator.SetBool("IsRunning", false);
-            Destroy(gameObject);
+            _animator.SetTrigger("Die");
+            _deathParticles.SetActive(true);
+            _agent.destination = transform.position;
+            Destroy(gameObject, _deathAnimTime);
         }
 
         private void FindTarget()
