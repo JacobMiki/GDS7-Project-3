@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: d1aac816f94a1d04dbc92b1b1e92ac6d
+guid: 90e06f9ce7d462a4b8eed017bf530d53
 ModelImporter:
   serializedVersion: 20100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SCIANA_SKALA
+    second: {fileID: 2100000, guid: 9ddfb7052b32f2242a92d3d2c44c7a9b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
