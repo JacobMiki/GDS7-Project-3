@@ -1,54 +1,9 @@
 fileFormatVersion: 2
-guid: 90e06f9ce7d462a4b8eed017bf530d53
+guid: aa1de9482db1c23419c7113fd5ff4f80
 ModelImporter:
   serializedVersion: 20100
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CAP
-    second: {fileID: 2100000, guid: 2bb8ddd26b6703c4f88807c0d349568d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: CAP_POMNIKI
-    second: {fileID: 2100000, guid: d75af36f02995704386e369f60d9eef6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: KOLUMNY
-    second: {fileID: 2100000, guid: 80bfc731dd6a1e948ad458f14b4ad050, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LAB1
-    second: {fileID: 2100000, guid: df98372f0392a2643bf0d9da5e5f1750, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LAB2
-    second: {fileID: 2100000, guid: aef66e297fc6afe459855c5ebea6f4c0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: LAB3
-    second: {fileID: 2100000, guid: 310bcd15e988f604b83da1f119d70ba6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: No Name
-    second: {fileID: 2100000, guid: 51886f32d3f27004fa453a7ecb58397b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PAJECZYNA
-    second: {fileID: 2100000, guid: 725259425e5b48144949181a930f68b4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PIACH
-    second: {fileID: 2100000, guid: f031cf6cc9ec6a445a0bc4ce4ad3b31b, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
