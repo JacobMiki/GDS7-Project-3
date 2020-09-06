@@ -396,7 +396,7 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 0
-  m_StandbyUpdate: 2
+  m_StandbyUpdate: 0
   m_LookAt: {fileID: 1342926278233719119}
   m_Follow: {fileID: 1342926278233719119}
   m_AnimatedTarget: {fileID: 8537586761966607612}
@@ -427,40 +427,54 @@ MonoBehaviour:
   m_ParentHash:
   - m_Hash: -1292065500
     m_ParentHash: 756556552
-  - m_Hash: 475138619
+  - m_Hash: 468985801
     m_ParentHash: 756556552
-  - m_Hash: -712872641
-    m_ParentHash: 475138619
-  - m_Hash: -1269942660
-    m_ParentHash: 475138619
-  - m_Hash: -880316074
-    m_ParentHash: -1269942660
-  - m_Hash: -2127762152
-    m_ParentHash: -1269942660
-  - m_Hash: 478770884
-    m_ParentHash: -1269942660
-  - m_Hash: 57222269
-    m_ParentHash: -1269942660
-  - m_Hash: 462521895
-    m_ParentHash: -1269942660
-  - m_Hash: -1205320150
-    m_ParentHash: -1269942660
-  - m_Hash: -1961413016
-    m_ParentHash: 475138619
-  - m_Hash: -602142533
-    m_ParentHash: -1961413016
-  - m_Hash: -616488010
-    m_ParentHash: -1961413016
-  - m_Hash: 2070917835
-    m_ParentHash: -1961413016
-  - m_Hash: 1997726783
-    m_ParentHash: 475138619
-  - m_Hash: -1140207196
-    m_ParentHash: 1997726783
-  - m_Hash: -2042701935
-    m_ParentHash: 1997726783
-  - m_Hash: 461007828
-    m_ParentHash: 1997726783
+  - m_Hash: 664448756
+    m_ParentHash: 468985801
+  - m_Hash: 1506417646
+    m_ParentHash: 664448756
+  - m_Hash: -609635574
+    m_ParentHash: 664448756
+  - m_Hash: 1111069390
+    m_ParentHash: 468985801
+  - m_Hash: 1973251527
+    m_ParentHash: 1111069390
+  - m_Hash: 1837323534
+    m_ParentHash: 1973251527
+  - m_Hash: 1745779028
+    m_ParentHash: 1973251527
+  - m_Hash: 285431839
+    m_ParentHash: 1111069390
+  - m_Hash: 774192616
+    m_ParentHash: 285431839
+  - m_Hash: -2028479600
+    m_ParentHash: 285431839
+  - m_Hash: -1876923286
+    m_ParentHash: 1111069390
+  - m_Hash: 959266177
+    m_ParentHash: -1876923286
+  - m_Hash: -1725894706
+    m_ParentHash: -1876923286
+  - m_Hash: -1939903532
+    m_ParentHash: 468985801
+  - m_Hash: -1411446075
+    m_ParentHash: -1939903532
+  - m_Hash: -1998349745
+    m_ParentHash: -1939903532
+  - m_Hash: 212644021
+    m_ParentHash: -1939903532
+  - m_Hash: -2124070771
+    m_ParentHash: 468985801
+  - m_Hash: -1748271233
+    m_ParentHash: -2124070771
+  - m_Hash: -1372127791
+    m_ParentHash: -2124070771
+  - m_Hash: 817415439
+    m_ParentHash: -2124070771
+  - m_Hash: -1973470209
+    m_ParentHash: 468985801
+  - m_Hash: -1680348913
+    m_ParentHash: -1973470209
 --- !u!1 &3018876883388645866
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,8 +585,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3179274636007121502}
-  m_LocalRotation: {x: 0.0029972245, y: -0.9883999, z: -0.019675659, w: -0.15056394}
-  m_LocalPosition: {x: -2.349823, y: -0.05445385, z: 8.49576}
+  m_LocalRotation: {x: -0.06720551, y: -0.0133454995, z: 0.00089900376, w: -0.9976495}
+  m_LocalPosition: {x: 0.26047176, y: 0.5, z: -1.4772108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3656695023235632187}
@@ -645,8 +659,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3202657435054369021}
-  m_LocalRotation: {x: 0.0011438761, y: 0.99701756, z: 0.015069236, w: -0.07568164}
-  m_LocalPosition: {x: -2.3498232, y: -0.05445385, z: 8.495759}
+  m_LocalRotation: {x: -0.02020908, y: 0.6467884, z: 0.01714884, w: 0.7622088}
+  m_LocalPosition: {x: 0.26047176, y: 0.5, z: -1.4772108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8574802323764824091}
@@ -668,7 +682,7 @@ MonoBehaviour:
   m_UpdateMethod: 1
   m_PositionUnits: 1
   m_Speed: 2
-  m_Position: 0
+  m_Position: 12.796346
 --- !u!114 &446080702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,6 +696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterInput: {fileID: 1342926278233719105}
+  _characterModel: {fileID: 3362715525793350549}
 --- !u!1 &5776935465004570401
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,8 +721,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5776935465004570401}
-  m_LocalRotation: {x: 0.0013196641, y: -0.99861115, z: 0.030896075, w: 0.04265529}
-  m_LocalPosition: {x: -0.000000023800899, y: 0, z: 0.0000000013969286}
+  m_LocalRotation: {x: -0.0013195741, y: 0.9986112, z: -0.030896073, w: -0.04265529}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5776935466138747986}
@@ -738,7 +753,7 @@ MonoBehaviour:
   m_LockStageInInspector: 00000000
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 2
+  m_StandbyUpdate: 0
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
@@ -821,7 +836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 0.5, z: -1.5}
+  m_FollowOffset: {x: 0, y: 1.2, z: -1.5}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -874,7 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0.3, y: 0.3, z: 0}
+  m_TrackedObjectOffset: {x: 0.3, y: 1, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 10
   m_LookaheadIgnoreY: 0
@@ -913,8 +928,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5776935465830419711}
-  m_LocalRotation: {x: 0.0028682784, y: -0.99682987, z: 0.06715018, w: 0.042579208}
-  m_LocalPosition: {x: -0.000000023800899, y: 0, z: 0.0000000013969286}
+  m_LocalRotation: {x: 0.0028683862, y: -0.9968298, z: 0.06715017, w: 0.042579208}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5776935465679379455}
@@ -945,7 +960,7 @@ MonoBehaviour:
   m_LockStageInInspector: 00000000
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 2
+  m_StandbyUpdate: 0
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
@@ -996,7 +1011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5776935465929657176}
   m_LocalRotation: {x: 0, y: -0.9995704, z: -0, w: -0.029308304}
-  m_LocalPosition: {x: 0.26047176, y: 0.5, z: -1.4772108}
+  m_LocalPosition: {x: 0.18647173, y: 0.5949993, z: -1.4732116}
   m_LocalScale: {x: 5, y: 4, z: 5}
   m_Children:
   - {fileID: 5776935465830419710}
@@ -1022,9 +1037,9 @@ MonoBehaviour:
   m_LockStageInInspector: 
   m_StreamingVersion: 20170927
   m_Priority: 0
-  m_StandbyUpdate: 2
-  m_LookAt: {fileID: 1342926278233719119}
-  m_Follow: {fileID: 1342926278233719119}
+  m_StandbyUpdate: 0
+  m_LookAt: {fileID: 1797387242819056006}
+  m_Follow: {fileID: 1797387242819056006}
   m_CommonLens: 1
   m_Lens:
     FieldOfView: 40
@@ -1102,11 +1117,11 @@ MonoBehaviour:
   m_BindingMode: 4
   m_SplineCurvature: 0.2
   m_Orbits:
-  - m_Height: 1.5
+  - m_Height: 2.3
     m_Radius: 1
-  - m_Height: 0.5
+  - m_Height: 1.2
     m_Radius: 1.5
-  - m_Height: 0
+  - m_Height: 0.7
     m_Radius: 0.8
   m_LegacyHeadingBias: 3.4028235e+38
   m_Rigs:
@@ -1201,7 +1216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 0.5, z: -1.5}
+  m_FollowOffset: {x: 0, y: 1.2, z: -1.5}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1254,7 +1269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0.3, y: 0.3, z: 0}
+  m_TrackedObjectOffset: {x: 0.3, y: 1, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 10
   m_LookaheadIgnoreY: 0
@@ -1327,7 +1342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 0.5, z: -1.5}
+  m_FollowOffset: {x: 0, y: 1.2, z: -1.5}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1380,7 +1395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4044717213e31446939f7bd49c896ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TrackedObjectOffset: {x: 0.3, y: 0.3, z: 0}
+  m_TrackedObjectOffset: {x: 0.3, y: 1, z: 0}
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 10
   m_LookaheadIgnoreY: 0
@@ -1419,8 +1434,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5776935466262607355}
-  m_LocalRotation: {x: 0.0020933258, y: -0.99788636, z: 0.04900725, w: 0.042624325}
-  m_LocalPosition: {x: -0.000000023800899, y: 0, z: 0.0000000013969286}
+  m_LocalRotation: {x: 0.0020933868, y: -0.99788636, z: 0.049007244, w: 0.042624325}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5776935466220026780}
@@ -1451,7 +1466,7 @@ MonoBehaviour:
   m_LockStageInInspector: 00000000
   m_StreamingVersion: 20170927
   m_Priority: 10
-  m_StandbyUpdate: 2
+  m_StandbyUpdate: 0
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
@@ -1610,7 +1625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7322616548168417993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.091, y: -0.44, z: 0.031}
+  m_LocalPosition: {x: 0.091, y: -0.501, z: 0.031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1342926278233719119}
@@ -2543,6 +2558,10 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 16ead3e0b12948e40b735dfb710296d1, type: 2}
     - target: {fileID: -6057140222963153312, guid: ced744f884684ef49897cbb33f2ddf87, type: 3}
       propertyPath: m_CullingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: ced744f884684ef49897cbb33f2ddf87, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -5839344585952267436, guid: ced744f884684ef49897cbb33f2ddf87, type: 3}

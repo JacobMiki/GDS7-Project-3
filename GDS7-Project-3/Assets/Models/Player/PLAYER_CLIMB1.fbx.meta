@@ -5,7 +5,10 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: -623603649343465320
-    second: Player_Climb
+    second: Player_Climb_Full
+  - first:
+      74: -7779313169112260122
+    second: Player_Climb_Part
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -40,10 +43,10 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Player_Climb
+      name: Player_Climb_Part
       takeName: Scene
       internalID: 0
-      firstFrame: 1
+      firstFrame: 12
       lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0
@@ -58,16 +61,30 @@ ModelImporter:
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
+      keepOriginalPositionXZ: 1
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0
+        functionName: DisableMovement
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 1
+        functionName: EnableMovement
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 12
     isReadable: 0
   meshes:
     lODScreenPercentages: []

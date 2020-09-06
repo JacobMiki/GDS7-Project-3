@@ -11,7 +11,7 @@ public class ClimbingSpot : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     [SerializeField] private float _maxDegreesToTargetForward;
 
-    private bool _isClimbing = false;
+    private static bool _isClimbing = false;
 
     private void OnTriggerStay(Collider other)
     {
@@ -20,26 +20,33 @@ public class ClimbingSpot : MonoBehaviour
             return;
         }
 
-        if (!other.GetComponent<IGroundedState>().IsGrounded && Vector3.Angle(other.transform.forward, _target.forward) <= _maxDegreesToTargetForward)
+        var groundedState = other.GetComponent<IGroundedState>();
+        if (!groundedState.IsGrounded && Vector3.Angle(other.transform.forward, _target.forward) <= _maxDegreesToTargetForward)
         {
             _isClimbing = true;
-            other.GetComponent<CharacterInput>().InputsEnabled = false;
-            other.GetComponent<Rigidbody>().isKinematic = true;
-            other.GetComponent<Collider>().enabled = false;
-            StartCoroutine(MoveToTarget(other.transform));
+            other.GetComponentInChildren<Animator>().SetTrigger("Climb");
+            other.transform.rotation = _target.rotation;
+            StartCoroutine(MoveToTarget(other.GetComponent<CharacterInput>(), groundedState));
         }
     }
 
-    private IEnumerator MoveToTarget(Transform other)
+    private IEnumerator MoveToTarget(CharacterInput other, IGroundedState groundedState)
     {
-        while(Vector3.Distance(other.position, _target.position) > _targetTolerance)
+        while (other.InputsEnabled)
         {
-            other.position = Vector3.Slerp(other.position, _target.position, Time.deltaTime * _moveSpeed);
             yield return null;
         }
-        other.GetComponent<CharacterInput>().InputsEnabled = true;
-        other.GetComponent<Rigidbody>().isKinematic = false;
-        other.GetComponent<Collider>().enabled = true;
+
+        while (!other.InputsEnabled)
+        {
+            yield return null;
+        }
+        other.transform.position = _target.position;
+
+        while (!groundedState.IsGrounded)
+        {
+            yield return null;
+        }
         _isClimbing = false;
     }
 }

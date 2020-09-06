@@ -14,7 +14,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         [SerializeField] private Animator _animator;
 
-
         // Start is called before the first frame update
         void Start()
         {
