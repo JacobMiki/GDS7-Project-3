@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/_Master.unity
     guid: d7d3f881ca066e545a175115192efea2
   - enabled: 1
+    path: Assets/Scenes/_Menu.unity
+    guid: af92576d33ee1a149b971115f3255b88
+  - enabled: 1
     path: Assets/Scenes/Pyramid Level - Master.unity
     guid: ea4bea44e3fb65c41ad06b199cb32c23
   - enabled: 1

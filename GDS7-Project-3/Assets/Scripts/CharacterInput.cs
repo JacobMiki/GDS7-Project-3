@@ -58,14 +58,19 @@ namespace GDS7.Group1.Project3.Assets.Scripts
                 _inputActions.Player.Jump.performed += OnJump;
             }
 
-            _inputActions.Player.Pause.performed += (a) => {
+            _inputActions.Player.Pause.performed += OnPause;
+
+        }
+
+        private void OnPause(InputAction.CallbackContext obj)
+        {
 #if DEBUG
-                Cursor.visible = !Cursor.visible;
-                Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
+            Debug.Log("Unlocking mouse");
+            Cursor.visible = !Cursor.visible;
+            Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
 #else
-                Application.Quit();
+            Application.Quit();
 #endif
-            };
         }
 
         private void OnInteract(InputAction.CallbackContext obj)
@@ -116,6 +121,11 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         }
 
+        private void OnDestroy()
+        {
+            OnDisable();
+        }
+
         private void OnDisable()
         {
             if (_look != null)
@@ -136,6 +146,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             {
                 _inputActions.Player.Jump.performed -= OnJump;
             }
+            _inputActions.Player.Pause.performed -= OnPause;
+
             _inputActions.Disable();
         }
     }
