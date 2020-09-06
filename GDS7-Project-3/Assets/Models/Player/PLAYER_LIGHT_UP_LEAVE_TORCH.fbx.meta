@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: c80b97e8fe07d2d47948aeb057a44dad
+guid: 2275f7c95e9242249b7dab85757752d8
 ModelImporter:
   serializedVersion: 20100
   internalIDToNameTable:
   - first:
       74: -623603649343465320
-    second: Player_Light_up
+    second: Player_Light_Up_Leave_Torch
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Player_Light_up
+      name: Player_Light_Up_Leave_Torch
       takeName: Scene
       internalID: 0
       firstFrame: 1
