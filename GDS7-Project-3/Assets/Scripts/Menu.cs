@@ -27,6 +27,7 @@ public class Menu : MonoBehaviour
         _introPlayer.targetCamera = Camera.main;
         _introPlayer.Play();
         StartCoroutine(WaitForLevelReady());
+        Application.backgroundLoadingPriority = ThreadPriority.Low;
         StartCoroutine(LevelLoader.LoadLevel(_startingLevel));
     }
 
@@ -50,6 +51,7 @@ public class Menu : MonoBehaviour
         {
             yield return null;
         }
+        Application.backgroundLoadingPriority = ThreadPriority.Normal;
         _canSkipText.SetActive(true);
     }
 

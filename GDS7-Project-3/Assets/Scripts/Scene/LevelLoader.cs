@@ -9,17 +9,34 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Scene
     public class LevelLoader : MonoBehaviour
     {
         [SerializeField] private Level _level;
-        [SerializeField] private bool _loadOnStart;
+        [SerializeField] private bool _loadLevelOnStart;
+        [SerializeField] private bool _loadMenuOnStart;
 
         public static bool CanActivateLevel = false;
         public static bool LevelReady = false;
 
         void Start()
         {
-            if (Application.isEditor && _loadOnStart)
+            if (Application.isEditor)
             {
-                StartCoroutine(StartAsync());
-            } else {
+                if (_loadLevelOnStart)
+                {
+                    StartCoroutine(StartAsync());
+                }
+                else if (_loadMenuOnStart)
+                {
+                    if (SceneManager.sceneCount > 1)
+                    {
+                        SceneManager.LoadScene("_Master");
+                    }
+                    else
+                    {
+                        SceneManager.LoadSceneAsync("_Menu", LoadSceneMode.Additive);
+                    }
+                }
+            }
+            else
+            {
                 var scene = SceneManager.GetSceneByName("_Menu");
                 if (!scene.isLoaded)
                 {
@@ -30,8 +47,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Scene
 
         public IEnumerator StartAsync()
         {
+            CanActivateLevel = true;
             yield return UnloadLevel(_level);
             yield return LoadLevel(_level);
+            CanActivateLevel = false;
         }
 
         public static IEnumerator LoadLevel(Level level)
@@ -39,14 +58,16 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Scene
             LevelReady = false;
             var levelScene = SceneManager.CreateScene(level.Name);
 
-
             var scenesToLoad = new List<AsyncOperation>();
             foreach (var levelPart in level.Parts)
             {
                 var sceneLoadOperation = SceneManager.LoadSceneAsync(levelPart.SceneName, LoadSceneMode.Additive);
                 sceneLoadOperation.allowSceneActivation = false;
+                sceneLoadOperation.priority = -int.MaxValue;
                 scenesToLoad.Add(sceneLoadOperation);
+                yield return null;
             }
+
 
             float progress = 0;
             while (progress < 0.9f)
@@ -57,8 +78,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Scene
                     progress += scenesToLoad[i].progress;
                 }
                 progress /= scenesToLoad.Count;
-                Debug.Log($"Level loading progess: {progress}");
-                yield return null;
+                yield return new WaitForSeconds(1);
             }
 
             LevelReady = true;

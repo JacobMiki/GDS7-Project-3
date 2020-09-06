@@ -37,7 +37,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void FixedUpdate()
         {
-            if (Physics.SphereCast(_groundChecker.position, 0.1f, Vector3.down, out var hit, 1f, _groundLayer, QueryTriggerInteraction.Ignore))
+            if (Physics.Raycast(_groundChecker.position, Vector3.down, out var hit, 1f, _groundLayer, QueryTriggerInteraction.Ignore))
             {
                 DistanceFromGround = hit.distance;
                 IsGrounded = DistanceFromGround <= _groundDistance;
