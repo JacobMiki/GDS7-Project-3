@@ -13,7 +13,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         private ITorchState _torchState;
 
         [SerializeField] private Animator _animator;
-        [SerializeField] private float _runningThreshold;
 
 
         // Start is called before the first frame update
@@ -27,10 +26,9 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         // Update is called once per frame
         void Update()
         {
-            _animator.SetBool("HasTorch", _torchState.HasTorch);
+            _animator.SetFloat("TorchMultiplier", _torchState.HasTorch ? 1.0f : 0.0f);
             _animator.SetBool("IsGrounded", _groundedState.IsGrounded);
-            _animator.SetBool("IsWalking", _moveInput.MoveDirection.magnitude > 0 && _moveInput.MoveDirection.magnitude < _runningThreshold);
-            _animator.SetBool("IsRunning", _moveInput.MoveDirection.magnitude >= _runningThreshold);
+            _animator.SetBool("IsRunning", _moveInput.MoveDirection.magnitude > 0);
             _animator.SetFloat("DistanceFromGround", _groundedState.DistanceFromGround);
         }
     }
