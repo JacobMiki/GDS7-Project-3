@@ -20,6 +20,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         public Vector3 MoveDirection { get; private set; }
 
         public bool InputsEnabled { get; set; }
+        public bool CameraEnabled { get; set; }
 
         private PlayerInputActions _inputActions;
 
@@ -29,6 +30,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
             InputsEnabled = true;
+            CameraEnabled = true;
         }
 
         private void OnEnable()
@@ -84,7 +86,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void OnLook(InputAction.CallbackContext context)
         {
-            if (Cursor.lockState == CursorLockMode.Locked)
+            if (Cursor.lockState == CursorLockMode.Locked && CameraEnabled)
             {
                 var value = context.ReadValue<Vector2>();
                 LookDelta = value;

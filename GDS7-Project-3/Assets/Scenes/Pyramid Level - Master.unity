@@ -394,11 +394,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1342926278233719119, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.93
+      value: 11.53
       objectReference: {fileID: 0}
     - target: {fileID: 1342926278233719119, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.282
+      value: 18.203
       objectReference: {fileID: 0}
     - target: {fileID: 1342926278233719119, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.x
@@ -434,39 +434,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.030891882
+      value: 0.030921472
       objectReference: {fileID: 0}
     - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.045316927
+      value: 0.013369391
       objectReference: {fileID: 0}
     - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0014025373
-      objectReference: {fileID: 0}
-    - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99849397
-      objectReference: {fileID: 0}
-    - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.000000023841858
-      objectReference: {fileID: 0}
-    - target: {fileID: 5776935465004570400, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5776935465830419710, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.06714177
-      objectReference: {fileID: 0}
-    - target: {fileID: 5776935465830419710, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.04523608
-      objectReference: {fileID: 0}
-    - target: {fileID: 5776935465830419710, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0030473354
+      value: -0.00041413796
       objectReference: {fileID: 0}
     - target: {fileID: 5776935465830419710, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -477,28 +453,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5776935466262607354, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.04900094
-      objectReference: {fileID: 0}
-    - target: {fileID: 5776935466262607354, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.045284048
+      value: -0.013359701
       objectReference: {fileID: 0}
     - target: {fileID: 5776935466262607354, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0022241282
-      objectReference: {fileID: 0}
-    - target: {fileID: 5776935466262607354, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.9977692
-      objectReference: {fileID: 0}
-    - target: {fileID: 5776935466262607354, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.000000023841858
-      objectReference: {fileID: 0}
-    - target: {fileID: 7494618790981369263, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.44
+      value: 0.00065644085
       objectReference: {fileID: 0}
     - target: {fileID: 8910446846080798861, guid: 9f85b930c77783b42a3b28d151e2c7b1, type: 3}
       propertyPath: m_Materials.Array.data[0]
