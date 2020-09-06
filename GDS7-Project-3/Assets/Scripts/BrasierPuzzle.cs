@@ -53,17 +53,20 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             {
                 Debug.Log("Influencing...");
                 Debug.Log(influence.Other);
-                switch (influence.Type)
+                if (influence.Other)
                 {
-                    case BrazierPuzzlePieceInfluenceType.ON:
-                        influence.Other.Switch(true, emitEvent: false);
-                        break;
-                    case BrazierPuzzlePieceInfluenceType.OFF:
-                        influence.Other.Switch(false, emitEvent: false);
-                        break;
-                    case BrazierPuzzlePieceInfluenceType.TOGGLE:
-                        influence.Other.Toggle(emitEvent: false);
-                        break;
+                    switch (influence.Type)
+                    {
+                        case BrazierPuzzlePieceInfluenceType.ON:
+                            influence.Other.Switch(true, emitEvent: false);
+                            break;
+                        case BrazierPuzzlePieceInfluenceType.OFF:
+                            influence.Other.Switch(false, emitEvent: false);
+                            break;
+                        case BrazierPuzzlePieceInfluenceType.TOGGLE:
+                            influence.Other.Toggle(emitEvent: false);
+                            break;
+                    }
                 }
             }
 
