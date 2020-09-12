@@ -43,16 +43,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts
                 return;
             }
 
-            Debug.Log("Updating puzzle...", this);
-
             var triggeringPiece = _pieces.First(piece => piece.Brasier == brasier);
-            Debug.Log("Triggered by");
-            Debug.Log(triggeringPiece);
 
             foreach (var influence in triggeringPiece.Influences)
             {
-                Debug.Log("Influencing...");
-                Debug.Log(influence.Other);
                 if (influence.Other)
                 {
                     switch (influence.Type)
@@ -72,7 +66,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
             if (_pieces.All(piece => piece.Brasier.IsLightOn))
             {
-                Debug.Log("Puzzle solved", this);
                 foreach (var piece in _pieces)
                 {
                     piece.Brasier.SwitchingDisabled = true;
@@ -80,8 +73,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
                 _onPuzzleSolve?.Invoke();
             }
 
-
-            Debug.Log("Updating puzzle... DONE", this);
             _afterPuzzleUpdate.Invoke();
         }
 

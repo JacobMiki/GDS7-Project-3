@@ -13,7 +13,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
         public void Interact()
         {
             _hitsToKill--;
-            Debug.Log("Enemy hit! Hits left: " + _hitsToKill.ToString(), this);
             if (_hitsToKill <= 0)
             {
                 _enemy.Defeat();

@@ -31,6 +31,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         {
             yield return new WaitForSeconds(_gameOverTimeout);
             transform.position = GetComponent<ISafeState>().LastSafePosition;
+            transform.rotation = GetComponent<ISafeState>().LastSafeRotation;
             GetComponent<ISafeState>().IsSafe = true;
             GetComponent<ITorchState>().HasTorch = true;
         }

@@ -643,6 +643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3061472249779650762}
   - component: {fileID: 5576684317681172358}
+  - component: {fileID: 6263109175359402385}
   m_Layer: 0
   m_Name: PlayerIntro DollyCart
   m_TagString: Untagged
@@ -680,7 +681,19 @@ MonoBehaviour:
   m_UpdateMethod: 0
   m_PositionUnits: 1
   m_Speed: 2
-  m_Position: 12.796346
+  m_Position: 0
+--- !u!114 &6263109175359402385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3202657435054369021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d207a452cea33f4986ffb77f14f5053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &446080702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,9 +1730,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_BindingMode: 1
   m_FollowOffset: {x: 0, y: 0, z: 0}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -3118,11 +3131,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ced744f884684ef49897cbb33f2ddf87, type: 3}
---- !u!95 &8537586761966607612 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: ced744f884684ef49897cbb33f2ddf87, type: 3}
-  m_PrefabInstance: {fileID: 6740532816118143644}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2935510739627080909 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8445983870306035281, guid: ced744f884684ef49897cbb33f2ddf87, type: 3}
@@ -3141,6 +3149,11 @@ GameObject:
 --- !u!4 &1797387242819056006 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: ced744f884684ef49897cbb33f2ddf87, type: 3}
+  m_PrefabInstance: {fileID: 6740532816118143644}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &8537586761966607612 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: -6057140222963153312, guid: ced744f884684ef49897cbb33f2ddf87, type: 3}
   m_PrefabInstance: {fileID: 6740532816118143644}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &4137697832084248132 stripped

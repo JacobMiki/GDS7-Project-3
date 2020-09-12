@@ -7,8 +7,8 @@ using UnityEngine.AI;
 
 public class Cheats : MonoBehaviour
 {
-    [SerializeField] private Vector3 _labirynthTarget;
-    [SerializeField] private Vector3 _exitTarget;
+    [SerializeField] private Transform _labirynthTarget;
+    [SerializeField] private Transform _exitTarget;
 
     public void Awake()
     {
@@ -19,12 +19,12 @@ public class Cheats : MonoBehaviour
 
     public void MovePlayerToLabirynth()
     {
-        GameObject.Find("Player").transform.position = _labirynthTarget;
+        GameObject.Find("Player").transform.position = _labirynthTarget.position;
     }
     
     public void MovePlayerToExit()
     {
-        GameObject.Find("Player").transform.position = _exitTarget;
+        GameObject.Find("Player").transform.position = _exitTarget.position;
     }
 
     public void TogglePlayerTorch()

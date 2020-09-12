@@ -65,7 +65,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         private void OnPause(InputAction.CallbackContext obj)
         {
 #if DEBUG
-            Debug.Log("Unlocking mouse");
             Cursor.visible = !Cursor.visible;
             Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
 #else

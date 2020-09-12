@@ -39,7 +39,6 @@ public class TorchInteraction : MonoBehaviour
         }
 
         var interactable = other.GetComponent<IInteractable>();
-        Debug.Log(interactable, this);
 
         interactable?.Interact();
         _isSwinging = false;

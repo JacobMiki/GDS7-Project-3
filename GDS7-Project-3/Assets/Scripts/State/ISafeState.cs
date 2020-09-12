@@ -11,5 +11,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts.State
     {
         bool IsSafe { get; set; }
         Vector3 LastSafePosition { get; set; }
+        Quaternion LastSafeRotation { get; set; }
     }
 }

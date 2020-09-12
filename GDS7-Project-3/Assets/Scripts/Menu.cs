@@ -9,19 +9,36 @@ using UnityEngine.Video;
 public class Menu : MonoBehaviour
 {
     [SerializeField] private GameObject _blackScreen;
-    [SerializeField] private GameObject _background;
     [SerializeField] private GameObject _menus;
     [SerializeField] private GameObject _canSkipText;
     [SerializeField] private Selectable _video;
+    [SerializeField] private Selectable _firstSelected;
     [SerializeField] private VideoPlayer _introPlayer;
     [SerializeField] private Level _startingLevel;
 
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        _firstSelected.Select();
+        _menus.SetActive(false);
+        _introPlayer.Prepare();
+        _introPlayer.Play();
+        _introPlayer.Pause();
+        _introPlayer.prepareCompleted += _introPlayer_prepareCompleted;
+    }
+
+    private void _introPlayer_prepareCompleted(VideoPlayer source)
+    {
+        _menus.SetActive(true);
+        _firstSelected.Select();
+    }
+
     public void StartGame()
     {
-        _blackScreen.SetActive(true);
-        Destroy(_background);
+        _menus.SetActive(false);
         Destroy(_menus);
-        _video.gameObject.SetActive(true);
+        _video.interactable = true;
         _video.Select();
         _introPlayer.loopPointReached += _introPlayer_loopPointReached;
         _introPlayer.targetCamera = Camera.main;
