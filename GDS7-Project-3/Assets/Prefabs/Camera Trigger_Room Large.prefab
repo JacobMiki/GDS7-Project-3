@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53495afebd9bda44f886c22326d42c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cinemachineTargetGroup: {fileID: 0}
+  _cinemachineTargetGroup: {fileID: 7067428804110505119}
 --- !u!1 &274888269782404659
 GameObject:
   m_ObjectHideFlags: 0
@@ -54,7 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274888269782404660}
   - component: {fileID: 274888269220038254}
-  - component: {fileID: 274888269782404661}
+  - component: {fileID: 6127068260190131132}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &274888269782404661
+--- !u!114 &6127068260190131132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -177,7 +177,7 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
+  m_LookAt: {fileID: 1469633926306510073}
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
