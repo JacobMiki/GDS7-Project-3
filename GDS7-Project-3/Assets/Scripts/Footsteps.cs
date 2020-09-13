@@ -90,12 +90,14 @@ namespace GDS7.Group1.Project3.Assets.Scripts
                 audioSource.PlayOneShot(clip);
             }
 
-            if (Physics.Raycast(foot.transform.position, Vector3.down, out var hit, _offGroundDistance))
+            if (Physics.Raycast(foot.transform.position, Vector3.down, out var hit, _offGroundDistance, LayerMask.GetMask("World"), QueryTriggerInteraction.Ignore))
             {
+                Debug.DrawRay(foot.transform.position, Vector3.down);
                 var footprintInstance = _footprintPool[_footprintIndex + skipIndex];
                 if (footprintInstance == null)
                 {
-                    footprintInstance = Instantiate(footprint, hit.point, transform.rotation, hit.transform);
+                    footprintInstance = Instantiate(footprint, hit.point, transform.rotation);
+                    footprintInstance.transform.SetParent(hit.transform);
                     _footprintPool[_footprintIndex + skipIndex] = footprintInstance;
                 } 
                 else

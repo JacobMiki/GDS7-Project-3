@@ -36,17 +36,22 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             HasTorch = _hasTorchOnStart;
         }
 
-        private void FixedUpdate()
+        private void LateUpdate()
         {
-            if (Physics.Raycast(_groundChecker.position, Vector3.down, out var hit, 1f, _groundLayer, QueryTriggerInteraction.Ignore))
+            var dist = 1f;
+
+            foreach (Transform checker in _groundChecker.transform)
             {
-                DistanceFromGround = hit.distance;
-                IsGrounded = DistanceFromGround <= _groundDistance;
+                if (Physics.Raycast(checker.position, Vector3.down, out var hit, 1f, _groundLayer, QueryTriggerInteraction.Ignore))
+                {
+                    if (dist > hit.distance)
+                    {
+                        dist = hit.distance;
+                    }
+                }
             }
-            else
-            {
-                IsGrounded = false;
-            }
+            DistanceFromGround = dist;
+            IsGrounded = DistanceFromGround <= _groundDistance;
         }
     }
 }

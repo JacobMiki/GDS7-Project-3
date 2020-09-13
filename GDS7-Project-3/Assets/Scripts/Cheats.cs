@@ -7,6 +7,8 @@ using UnityEngine.AI;
 
 public class Cheats : MonoBehaviour
 {
+    [SerializeField] private Transform _largeRoomTarget;
+    [SerializeField] private Transform _staircaseTarget;
     [SerializeField] private Transform _labirynthTarget;
     [SerializeField] private Transform _exitTarget;
 
@@ -15,6 +17,16 @@ public class Cheats : MonoBehaviour
 #if !DEBUG
         gameObject.SetActive(false);
 #endif
+    }
+
+    public void MovePlayerToLargeRoom()
+    {
+        GameObject.Find("Player").transform.position = _largeRoomTarget.position;
+    }
+
+    public void MovePlayerToStaircase()
+    {
+        GameObject.Find("Player").transform.position = _staircaseTarget.position;
     }
 
     public void MovePlayerToLabirynth()

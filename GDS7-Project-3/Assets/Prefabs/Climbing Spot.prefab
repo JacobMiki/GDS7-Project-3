@@ -114,9 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 7498759260622952063}
-  _targetTolerance: 0.08
-  _moveSpeed: 5
   _maxDegreesToTargetForward: 45
+  _climbAnimVector: {x: 0.05, y: 0.6657, z: 0.25}
 --- !u!1 &7498759260622952032
 GameObject:
   m_ObjectHideFlags: 0

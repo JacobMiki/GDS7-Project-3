@@ -44,6 +44,7 @@ public class PuzzleHint : MonoBehaviour
     private IEnumerator HitAfterWait()
     {
         yield return new WaitForSeconds(Random.Range(_minTimeBetweenHints, _maxTimeBetweenHints));
+        _audioSource.pitch = Random.Range(1.5f, 2.5f);
         _audioSource.Play();
         StartCoroutine(HitAfterWait());
     }

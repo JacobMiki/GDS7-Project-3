@@ -16,8 +16,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         [SerializeField] private Command _interact;
         [SerializeField] private Command _jump;
 
-        public Vector2 LookDelta { get; private set; }
-        public Vector3 MoveDirection { get; private set; }
+        public Vector2 LookDelta { get; set; }
+        public Vector3 MoveDirection { get; set; }
 
         public bool InputsEnabled { get; set; }
         public bool CameraEnabled { get; set; }
@@ -26,15 +26,18 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void Awake()
         {
-            _inputActions = new PlayerInputActions();
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            InputsEnabled = true;
-            CameraEnabled = true;
+
         }
 
         private void OnEnable()
         {
+            _inputActions = new PlayerInputActions();
+            
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            InputsEnabled = true;
+            CameraEnabled = true;
+
             _inputActions.Enable();
 
             if (_look != null)

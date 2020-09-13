@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2700517371320163113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.163, y: 6.924, z: 5.035}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2700517371935519644}
@@ -56,7 +56,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2700517371935519645}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.01, z: 0}
+  m_LocalPosition: {x: 0, y: 0.010000229, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2700517371320163112}
@@ -77,10 +77,10 @@ MonoBehaviour:
   m_Version: 2
   m_Material: {fileID: 2100000, guid: 66d6f688427074a4f9fd0eb1aa1bcdb5, type: 2}
   m_DrawDistance: 1000
-  m_FadeScale: 0.9
+  m_FadeScale: 1
   m_UVScale: {x: 1, y: 1}
   m_UVBias: {x: 0, y: 0}
-  m_AffectsTransparency: 0
-  m_Offset: {x: 0, y: 0, z: 0.5}
-  m_Size: {x: 0.1, y: 0.2, z: 1}
+  m_AffectsTransparency: 1
+  m_Offset: {x: 0, y: 0, z: 0.0051690275}
+  m_Size: {x: 0.1, y: 0.2, z: 0.010338055}
   m_FadeFactor: 1
