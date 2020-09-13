@@ -11,18 +11,18 @@ AvatarMask:
   m_Elements:
   - m_Path: 
     m_Weight: 1
+  - m_Path: OKO_L
+    m_Weight: 1
+  - m_Path: OKO_P
+    m_Weight: 1
   - m_Path: PLAYER
-    m_Weight: 0
-  - m_Path: PLAYER.002
-    m_Weight: 0
-  - m_Path: PLAYER.003
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: rig
     m_Weight: 0
   - m_Path: rig/root
     m_Weight: 0
   - m_Path: rig/root/DEF-spine
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: rig/root/DEF-spine/DEF-spine.001
     m_Weight: 1
   - m_Path: rig/root/DEF-spine/DEF-spine.001/DEF-spine.002
@@ -98,9 +98,9 @@ AvatarMask:
   - m_Path: rig/root/DEF-spine/DEF-spine.001/DEF-spine.002/DEF-spine.003/DEF-shoulder.R/DEF-upper_arm.R/DEF-forearm.R/DEF-hand.R/ORG-palm.03.R/DEF-palm.03.R
     m_Weight: 1
   - m_Path: rig/root/DEF-spine/DEF-spine.001/DEF-spine.002/DEF-spine.003/DEF-spine.004
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: rig/root/DEF-spine/DEF-spine.001/DEF-spine.002/DEF-spine.003/DEF-spine.004/DEF-head
-    m_Weight: 0
+    m_Weight: 1
   - m_Path: rig/root/DEF-spine/DEF-thigh.L
     m_Weight: 0
   - m_Path: rig/root/DEF-spine/DEF-thigh.L/DEF-shin.L
