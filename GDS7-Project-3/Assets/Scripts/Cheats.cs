@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GDS7.Group1.Project3.Assets.Scripts;
 using GDS7.Group1.Project3.Assets.Scripts.Enemy;
 using GDS7.Group1.Project3.Assets.Scripts.State;
 using UnityEngine;
@@ -45,9 +46,9 @@ public class Cheats : MonoBehaviour
         torchState.HasTorch = !torchState.HasTorch;
     }
 
-    public void SpawnEnemy()
+    public void SolveLabyrinth()
     {
-        FindObjectOfType<EnemySpawner>()?.SpawnEnemy();
+        GameObject.Find("Labyrinth Brasier Puzzle").GetComponent<BrasierPuzzle>().ForceSolve();
     }
 
 

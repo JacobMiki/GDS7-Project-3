@@ -80,5 +80,13 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         {
             return _pieces.Where(piece => !piece.Brasier.IsLightOn);
         }
+
+        public void ForceSolve()
+        {
+            foreach (var piece in _pieces)
+            {
+                piece.Brasier.Switch(true);
+            }
+        }
     }
 }

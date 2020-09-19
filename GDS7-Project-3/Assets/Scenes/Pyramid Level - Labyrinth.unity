@@ -1760,7 +1760,7 @@ GameObject:
   - component: {fileID: 665602661}
   - component: {fileID: 665602662}
   m_Layer: 9
-  m_Name: Brasier Puzzle
+  m_Name: Labyrinth Brasier Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
