@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using GDS7.Group1.Project3.Assets.Scripts.Input;
+using GDS7.Group1.Project3.Assets.Scripts.Input.Commands;
 using GDS7.Group1.Project3.Assets.Scripts.State;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         private IGroundedState _groundedState;
         private IMoveInput _moveInput;
         private ITorchState _torchState;
+        private MoveAndRotateForwardCommand _moveCommand;
 
         [SerializeField] private Animator _animator;
 
@@ -20,6 +22,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             _groundedState = GetComponent<IGroundedState>();
             _moveInput = GetComponent<IMoveInput>();
             _torchState = GetComponent<ITorchState>();
+            _torchState = GetComponent<ITorchState>();
+            _moveCommand = GetComponent<MoveAndRotateForwardCommand>();
         }
 
         // Update is called once per frame
@@ -29,6 +33,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             _animator.SetBool("IsGrounded", _groundedState.IsGrounded);
             _animator.SetBool("IsRunning", _moveInput.MoveDirection.magnitude > 0);
             _animator.SetFloat("DistanceFromGround", _groundedState.DistanceFromGround);
+            _animator.SetFloat("Speed", _moveCommand.GetFullSpeedMult());
         }
     }
 }

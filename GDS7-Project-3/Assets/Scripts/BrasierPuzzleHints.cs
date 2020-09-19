@@ -85,8 +85,12 @@ public class BrasierPuzzleHints : MonoBehaviour
             {
                 return Vector3.Distance(player.transform.position, b.Brasier.transform.position);
             }
-        }).First();
-        _hint = Instantiate(_hintPrefab, _hintingAt.Brasier.transform);
+        }).FirstOrDefault();
+
+        if (_hintingAt != null)
+        {
+            _hint = Instantiate(_hintPrefab, _hintingAt.Brasier.transform);
+        }
         _waitToSpawnHintCoroutine = null;
     }
 }

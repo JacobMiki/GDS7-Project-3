@@ -20,6 +20,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         [SerializeField] private float _turnSmoothTime;
 
         private float _turnSmoothVelocity;
+        private float _fullSpeed;
 
         private void Awake()
         {
@@ -27,6 +28,22 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
             _move = GetComponent<IMoveInput>();
             _rigidbody = GetComponent<Rigidbody>();
             _camera = GameObject.FindGameObjectWithTag("MainCamera").transform;
+            _fullSpeed = _speed;
+        }
+
+        public void SetSpeed(float speed)
+        {
+            _speed = speed;
+        }
+
+        public void ResetSpeed()
+        {
+            _speed = _fullSpeed;
+        }
+
+        public float GetFullSpeedMult()
+        {
+            return _speed / _fullSpeed;
         }
 
         public override void Execute()

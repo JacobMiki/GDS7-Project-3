@@ -9,6 +9,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Triggers
         [SerializeField] private float _encounterCooldown;
 
         private WaitForSeconds _waitForEncounterCooldown;
+        private Coroutine _cooldownCoroutine;
 
         private void Start()
         {
@@ -18,15 +19,26 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Triggers
 
         protected override bool HandleTrigger(Collider other)
         {
-            StartCoroutine(Cooldown());
+            _enabled = false;
             return true;
+        }
+
+        private void OnTriggerExit(Collider other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                if (_cooldownCoroutine == null)
+                {
+                    _cooldownCoroutine = StartCoroutine(Cooldown());
+                }
+            }
         }
 
         private IEnumerator Cooldown()
         {
-            _enabled = false;
             yield return _waitForEncounterCooldown;
             _enabled = true;
+            _cooldownCoroutine = null;
         }
     }
 }

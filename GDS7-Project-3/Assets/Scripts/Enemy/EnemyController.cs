@@ -9,14 +9,22 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
     public class EnemyController : MonoBehaviour
     {
         [SerializeField] private Animator _animator;
+        [SerializeField] private GameObject _model;
         [SerializeField] private NavMeshAgent _agent;
         [SerializeField] private bool _activateOnStart;
         [SerializeField] private float _deathAnimTime;
+        [SerializeField] private float _fullDeathTime;
+        [SerializeField] private float _deathSpeed;
         [SerializeField] private GameObject _killZone;
+        [SerializeField] private GameObject _affectTorchArea;
         [SerializeField] private GameObject _deathParticles;
+        [SerializeField] private AudioSource _audio;
+        [SerializeField] private float _onHitForce;
+
         [SerializeField] private UnityEvent _onDefeat = new UnityEvent();
 
         private bool _active = false;
+        private bool _dead = false;
         private GameObject _player;
 
         void Start()
@@ -53,12 +61,20 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
         public void Defeat()
         {
             _active = false;
+            _dead = true;
             _killZone.SetActive(false);
+            // Destroy(_affectTorchArea);
             _onDefeat.Invoke();
             _animator.SetTrigger("Die");
             _deathParticles.SetActive(true);
-            _agent.destination = transform.position;
-            Destroy(gameObject, _deathAnimTime);
+            _agent.enabled = false;
+            Destroy(_model, _deathAnimTime);
+            Destroy(gameObject, _fullDeathTime);
+        }
+
+        public void Hit()
+        {
+            _agent.velocity = -_agent.transform.forward * _onHitForce;
         }
 
         private void FindTarget()
@@ -75,6 +91,12 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
             if (_active && _agent.isActiveAndEnabled && _agent.isOnNavMesh)
             {
                 FindTarget();
+            }
+            if (_dead)
+            {
+                _audio.volume *= 0.5f;
+                // transform.position += Vector3.up * _deathSpeed * Time.deltaTime;
+                transform.position += -transform.forward * _deathSpeed * Time.deltaTime;
             }
         }
     }

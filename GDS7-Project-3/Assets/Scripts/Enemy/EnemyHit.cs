@@ -12,6 +12,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
 
         public void Interact()
         {
+            _enemy.Hit();
             _hitsToKill--;
             if (_hitsToKill <= 0)
             {
