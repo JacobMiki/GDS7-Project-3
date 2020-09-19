@@ -53,5 +53,20 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             DistanceFromGround = dist;
             IsGrounded = DistanceFromGround <= _groundDistance;
         }
+
+        public GameObject DropTorch()
+        {
+            var torch = Instantiate(_torch, _torch.transform.parent);
+            var rb = torch.AddComponent<Rigidbody>();
+            rb.mass = 1f;
+            rb.isKinematic = false;
+            rb.useGravity = true;
+            var collider = torch.AddComponent<CapsuleCollider>();
+            collider.radius = 0.1f;
+            collider.center = new Vector3(0.1f, 0, 0);
+            torch.layer = LayerMask.NameToLayer("Default");
+            HasTorch = false;
+            return torch;
+        }
     }
 }
