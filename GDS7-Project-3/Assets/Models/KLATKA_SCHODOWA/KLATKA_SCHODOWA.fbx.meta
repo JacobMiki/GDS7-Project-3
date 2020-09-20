@@ -7,8 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: LAB1.002
+    second: {fileID: 2100000, guid: da962f0062175fd43bcb1fb80f4a2a42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material.003
     second: {fileID: 2100000, guid: 8a19684a4e913734db4d250bece81b87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8a3c8d498a6d30c4aba9b390ca4ceefb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PAJECZYNA.001
+    second: {fileID: 2100000, guid: bdc4dc3f5b7314549b0fd4e76ffb1aa1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PIACH
+    second: {fileID: 2100000, guid: 5c640947d33ee9b4e941272ba0e058d9, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
