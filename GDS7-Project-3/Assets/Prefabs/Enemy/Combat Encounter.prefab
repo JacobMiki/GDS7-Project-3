@@ -76,7 +76,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _encounterCooldown: 12
+  _encounterCooldown: 30
 --- !u!114 &7623016640732244755
 MonoBehaviour:
   m_ObjectHideFlags: 0
