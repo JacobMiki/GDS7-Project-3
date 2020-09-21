@@ -17,11 +17,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 274888268630118950, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
       propertyPath: m_OnObjectEnter.m_Event.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 274888268630118950, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
       propertyPath: m_OnObjectExit.m_Event.m_PersistentCalls.m_Calls.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 274888268630118950, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
+      propertyPath: m_OnObjectEnter.m_Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4537489536721274209}
+    - target: {fileID: 274888268630118950, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
+      propertyPath: m_OnObjectEnter.m_Event.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GDS7.Group1.Project3.Assets.Scripts.CameraTarget, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 274888268630118950, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
+      propertyPath: m_OnObjectEnter.m_Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayThinkingSound
+      objectReference: {fileID: 0}
+    - target: {fileID: 274888268630118950, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
+      propertyPath: m_OnObjectEnter.m_Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 274888268807732237, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -122,3 +138,14 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 4763564098456649757, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
+--- !u!114 &4537489536721274209 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 274888268807732238, guid: 673f3b3020d1b7442954b909cbef1c9f, type: 3}
+  m_PrefabInstance: {fileID: 4407053563917121903}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53495afebd9bda44f886c22326d42c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

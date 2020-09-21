@@ -8,10 +8,13 @@ namespace GDS7.Group1.Project3.Assets.Scripts
     {
         [SerializeField] private CharacterInput _characterInput;
         [SerializeField] private GameObject _characterModel;
+
+        private PlayerSounds _sounds;
         private Vector3 _startRootPosition;
 
         private void Start()
         {
+            _sounds = _characterInput.GetComponent<PlayerSounds>();
         }
 
         public void EnableInputs()
@@ -41,6 +44,11 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             _startRootPosition = _characterModel.transform.position;
             _characterInput.InputsEnabled = false;
             _characterInput.MoveDirection = Vector3.zero;
+        }
+
+        public void PlayStandUpSound()
+        {
+            _sounds.Play(PlayerSoundTypes.STAND_UP);
         }
     }
 }

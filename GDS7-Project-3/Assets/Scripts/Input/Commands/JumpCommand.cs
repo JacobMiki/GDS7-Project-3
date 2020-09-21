@@ -10,6 +10,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         private Rigidbody _rigidbody;
         private IGroundedState _groundedState;
         private IMoveInput _moveInput;
+        private PlayerSounds _sounds;
 
         [SerializeField] private Animator _animator;
         [SerializeField] private float _jumpHeight;
@@ -24,6 +25,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
             _rigidbody = GetComponent<Rigidbody>();
             _groundedState = GetComponent<IGroundedState>();
             _moveInput = GetComponent<IMoveInput>();
+            _sounds = GetComponent<PlayerSounds>();
         }
 
         public override void Execute()
@@ -32,6 +34,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
             if (!_jumpDisabled && _groundedState.IsGrounded)
             {
                 _animator.SetTrigger("Jump");
+                _sounds.Play(PlayerSoundTypes.JUMP);
                 _jumpDisabled = true;
                 StartCoroutine(JumpAfterTakeoff());
             }

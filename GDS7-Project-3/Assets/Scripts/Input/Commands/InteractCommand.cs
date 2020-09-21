@@ -17,11 +17,13 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         [SerializeField] private TorchInteraction _torchInteraction;
 
         private ITorchState _torchState;
+        private PlayerSounds _sounds;
         private bool _canInteract = true;
 
         private void Awake()
         {
             _torchState = GetComponent<ITorchState>();
+            _sounds = GetComponent<PlayerSounds>();
         }
 
         public override void Execute()
@@ -30,6 +32,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
             {
                 _canInteract = false;
                 StartCoroutine(Cooldown());
+                _sounds.Play(PlayerSoundTypes.SWING);
                 _torchInteraction.StartSwing();
             }
         }

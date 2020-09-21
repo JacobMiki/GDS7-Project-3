@@ -22,5 +22,11 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             player.GetComponent<CharacterInput>().CameraEnabled = true;
             _cinemachineTargetGroup.RemoveMember(player.transform);
         }
+
+        public void PlayThinkingSound()
+        {
+            var player = GameObject.FindGameObjectWithTag("Player");
+            player.GetComponent<PlayerSounds>().Play(PlayerSoundTypes.THINKING);
+        }
     }
 }

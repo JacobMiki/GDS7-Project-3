@@ -75,6 +75,8 @@ public class ClimbingSpot : MonoBehaviour
         other.GetComponentInChildren<Animator>().SetTrigger("Climb");
         other.GetComponentInChildren<Animator>().SetBool("IsClimbing", true);
 
+        other.GetComponent<PlayerSounds>().Play(PlayerSoundTypes.CLIMB);
+
         other.transform.rotation = _target.rotation;
 
         var targetPoint = _targetPoint.Value;
