@@ -33,9 +33,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         public void EnableMovement()
         {
             var vec = _characterModel.transform.position - _startRootPosition;
-            Debug.Log(vec.x);
-            Debug.Log(vec.y);
-            Debug.Log(vec.z);
             _characterInput.InputsEnabled = true;
         }
 

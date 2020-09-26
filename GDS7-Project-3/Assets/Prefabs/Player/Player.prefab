@@ -313,11 +313,26 @@ MonoBehaviour:
   _rightFootprint: {fileID: 7826417540482807733, guid: 5982e2bb8e50fe8459139e0553b28038, type: 3}
   _leftFootprint: {fileID: 2700517371320163113, guid: 69f17dd32270aae45bb712afbf6ac320, type: 3}
   _footsteps:
-  - {fileID: 8300000, guid: 2d018238a71874a45a21c8b4eefdad25, type: 3}
-  - {fileID: 8300000, guid: 88dc4b413e099b84480b859d4a9d652f, type: 3}
-  - {fileID: 8300000, guid: 2087155d99d37784bbe838e93dbfdfe7, type: 3}
-  - {fileID: 8300000, guid: c0fa3a9501b3a3449a188a7fe0405ee3, type: 3}
-  - {fileID: 8300000, guid: 115b3d4e5cdf1684e8ca06772b3b60a2, type: 3}
+  - {fileID: 8300000, guid: c397e3f7e74d9674a855768225980e26, type: 3}
+  - {fileID: 8300000, guid: a58d5a69b434e8443ab346757c0351d6, type: 3}
+  - {fileID: 8300000, guid: a7b851001035d384a90cd41e43e99fa1, type: 3}
+  - {fileID: 8300000, guid: 2b204634b5003b348a660383ccf5c852, type: 3}
+  - {fileID: 8300000, guid: ca2c58451165b214bbec6d61409cc34c, type: 3}
+  - {fileID: 8300000, guid: f88b19b5926df3d4eb6ae4da125339f0, type: 3}
+  - {fileID: 8300000, guid: 3acec8e0004ef964fbd32abaa5e10172, type: 3}
+  - {fileID: 8300000, guid: d23d3d66c62e3f44bb886eaaced82fbc, type: 3}
+  - {fileID: 8300000, guid: eab5afd6094df8547b20d1559f1198e5, type: 3}
+  - {fileID: 8300000, guid: e54c2dc6f0e033645900e488a384b65f, type: 3}
+  - {fileID: 8300000, guid: abfbc64d7e9cefd459b561c8cf23b329, type: 3}
+  - {fileID: 8300000, guid: 71eb9610a3c2caf45a5efa79ea3620e0, type: 3}
+  - {fileID: 8300000, guid: 5b146fc12a72be64ebc71fa9f506d0aa, type: 3}
+  - {fileID: 8300000, guid: 2d25966be82ebf04691227ff8ee69020, type: 3}
+  - {fileID: 8300000, guid: 77e0ed6eed4e2324a87f64810bf76192, type: 3}
+  - {fileID: 8300000, guid: df124a0c10b0d614983612ff8d57d5a9, type: 3}
+  - {fileID: 8300000, guid: 0129ddc9960d31d41bd89a7576fc54c3, type: 3}
+  - {fileID: 8300000, guid: 5f6a09f2b37766c4a89a9cee26d8d104, type: 3}
+  - {fileID: 8300000, guid: 4bf739a0160f9484a96fcf9511ee42c8, type: 3}
+  - {fileID: 8300000, guid: 08c9d1bd7fb9038489e18afa7043e78a, type: 3}
   _maxFootprints: 1000
   _offGroundDistance: 0.05
 --- !u!114 &8624523505163327592
@@ -2344,19 +2359,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 364390216653474851, guid: 7eb69025bfb9c864f8df4d5910a08574, type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0
+      value: 7.2368274e+25
       objectReference: {fileID: 0}
     - target: {fileID: 364390216653474851, guid: 7eb69025bfb9c864f8df4d5910a08574, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 0.0000022618715
+      value: 0.000000056901076
       objectReference: {fileID: 0}
     - target: {fileID: 364390216653474851, guid: 7eb69025bfb9c864f8df4d5910a08574, type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 7.31e-43
+      value: 1.9272616e+31
       objectReference: {fileID: 0}
     - target: {fileID: 364390216653474851, guid: 7eb69025bfb9c864f8df4d5910a08574, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 1.5e-43
+      value: 5.5355182e-11
       objectReference: {fileID: 0}
     - target: {fileID: 3312754039421539386, guid: 7eb69025bfb9c864f8df4d5910a08574, type: 3}
       propertyPath: _animator
