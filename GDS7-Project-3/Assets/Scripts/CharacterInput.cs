@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using GDS7.Group1.Project3.Assets.Scripts.Input;
 using GDS7.Group1.Project3.Assets.Scripts.Input.Commands;
 using UnityEngine;
@@ -15,6 +16,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         [SerializeField] private Command _look;
         [SerializeField] private Command _interact;
         [SerializeField] private Command _jump;
+
 
         public Vector2 LookDelta { get; set; }
         public Vector3 MoveDirection { get; set; }
@@ -70,6 +72,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 #if DEBUG
             Cursor.visible = !Cursor.visible;
             Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
+            CameraEnabled = !CameraEnabled;
+            InputsEnabled = !InputsEnabled;
 #else
             Application.Quit();
 #endif

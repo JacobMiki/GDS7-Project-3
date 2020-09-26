@@ -20,9 +20,14 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
             _light.SetActive(_activeOnStart);
         }
 
+        public void Switch(bool on)
+        {
+            Switch(on, true);
+        }
+
         public void Switch(bool on, bool emitEvent = true)
         {
-            if (SwitchingDisabled)
+            if (SwitchingDisabled || IsLightOn == on)
             {
                 return;
             }

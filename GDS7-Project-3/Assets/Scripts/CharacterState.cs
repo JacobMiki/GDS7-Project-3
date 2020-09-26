@@ -57,15 +57,19 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         public GameObject DropTorch()
         {
             var torch = Instantiate(_torch, _torch.transform.parent);
+            torch.transform.SetParent(null);
             var rb = torch.AddComponent<Rigidbody>();
             rb.mass = 1f;
             rb.isKinematic = false;
             rb.useGravity = true;
             var collider = torch.AddComponent<CapsuleCollider>();
-            collider.radius = 0.1f;
+            collider.radius = 0.05f;
             collider.center = new Vector3(0.1f, 0, 0);
             torch.layer = LayerMask.NameToLayer("Default");
             HasTorch = false;
+            Destroy(torch.transform.Find("Torch").gameObject);
+            Destroy(torch.GetComponent<Collider>(), 5f);
+            Destroy(torch, 8f);
             return torch;
         }
     }

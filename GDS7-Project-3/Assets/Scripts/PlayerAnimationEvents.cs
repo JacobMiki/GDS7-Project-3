@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using GDS7.Group1.Project3.Assets.Scripts.State;
 using UnityEngine;
 
 namespace GDS7.Group1.Project3.Assets.Scripts
@@ -10,11 +11,13 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         [SerializeField] private GameObject _characterModel;
 
         private PlayerSounds _sounds;
+        private ITorchState _torchState;
         private Vector3 _startRootPosition;
 
         private void Start()
         {
             _sounds = _characterInput.GetComponent<PlayerSounds>();
+            _torchState = _characterInput.GetComponent<ITorchState>();
         }
 
         public void EnableInputs()
@@ -32,20 +35,29 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         public void EnableMovement()
         {
-            var vec = _characterModel.transform.position - _startRootPosition;
             _characterInput.InputsEnabled = true;
+            _characterInput.GetComponent<Collider>().enabled = true;
+            _characterInput.GetComponent<Rigidbody>().isKinematic = false;
+            _characterInput.GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
 
         public void DisableMovement()
         {
-            _startRootPosition = _characterModel.transform.position;
             _characterInput.InputsEnabled = false;
             _characterInput.MoveDirection = Vector3.zero;
+            _characterInput.GetComponent<Collider>().enabled = false;
+            _characterInput.GetComponent<Rigidbody>().isKinematic = true;
+            _characterInput.GetComponent<Rigidbody>().velocity = Vector3.zero;
         }
 
         public void PlayStandUpSound()
         {
             _sounds.Play(PlayerSoundTypes.STAND_UP);
+        }
+
+        public void DropTorch()
+        {
+            _torchState.DropTorch();
         }
     }
 }

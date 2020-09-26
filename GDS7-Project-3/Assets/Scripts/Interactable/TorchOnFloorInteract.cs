@@ -4,9 +4,9 @@ using GDS7.Group1.Project3.Assets.Scripts.Interactable;
 using GDS7.Group1.Project3.Assets.Scripts.State;
 using UnityEngine;
 
-namespace GDS7.Group1.Project3.Assets.Scripts
+namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
 {
-    public class TorchOnFloorTrigger : MonoBehaviour
+    public class TorchOnFloorInteract : MonoBehaviour
     {
         public void PickUpTorch(GameObject picker, InteractionZone zone = null)
         {

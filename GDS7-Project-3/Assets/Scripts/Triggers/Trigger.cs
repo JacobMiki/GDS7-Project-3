@@ -64,6 +64,18 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Triggers
             Handles.color = Color.white;
             Handles.matrix = UnityEngine.Matrix4x4.identity;
         }
+
+        private void OnDrawGizmosSelected()
+        {
+            var collider = GetComponent<BoxCollider>();
+            Gizmos.color = _enabled ? _enabledGizmoColor : _disabledGizmoColor;
+            Gizmos.matrix = transform.localToWorldMatrix;
+
+            Gizmos.DrawCube(collider.center, collider.size);
+
+            Gizmos.color = Color.white;
+            Gizmos.matrix = UnityEngine.Matrix4x4.identity;
+        }
 #endif
     }
 }
