@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace GDS7.Group1.Project3.Assets.Scripts.Spawners
 {
@@ -82,7 +85,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Spawners
                 }
             }
         }
-
+#if UNITY_EDITOR
         private void OnDrawGizmos()
         {
             if (!GetSpawners().Any())
@@ -93,14 +96,17 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Spawners
             var spawners = GetSpawners();
             var first = spawners.First();
 
-            Gizmos.color = _gizmosColor;
-            Gizmos.DrawCube(transform.position, Vector3.one * 0.3f);
-            Gizmos.DrawLine(transform.position, first.GetPosition());
+            Handles.color = _gizmosColor;
+            Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
+            Handles.CubeHandleCap(-1, transform.position, Quaternion.identity, 0.3f, EventType.Repaint);
+            Handles.DrawAAPolyLine(1f, transform.position, first.GetPosition());
             foreach (var spawner in spawners)
             {
-                Gizmos.DrawLine(transform.position, spawner.GetPosition());
+                Handles.DrawAAPolyLine(1f, transform.position, spawner.GetPosition());
             }
-
+            Handles.color = Color.white;
+            Handles.zTest = UnityEngine.Rendering.CompareFunction.Always;
         }
+#endif
     }
 }

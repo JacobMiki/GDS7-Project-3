@@ -10,7 +10,7 @@ public class TorchInteraction : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private Collider _interactionTriggerCollider;
 
-    private bool _isSwinging = false;
+    public bool isSwinging = false;
 
     private void Start()
     {
@@ -19,7 +19,7 @@ public class TorchInteraction : MonoBehaviour
 
     public void StartSwing()
     {
-        _isSwinging = true;
+        isSwinging = true;
         _interactionTriggerCollider.enabled = true;
         _animator.SetTrigger("Attack");
         _audioSource.PlayOneShot(_swingSound);
@@ -27,13 +27,13 @@ public class TorchInteraction : MonoBehaviour
 
     public void EndSwing()
     {
-        _isSwinging = false;
+        isSwinging = false;
         _interactionTriggerCollider.enabled = false;
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (!_isSwinging)
+        if (!isSwinging)
         {
             return;
         }
@@ -41,6 +41,6 @@ public class TorchInteraction : MonoBehaviour
         var interactable = other.GetComponent<IInteractable>();
 
         interactable?.Interact();
-        _isSwinging = false;
+        isSwinging = false;
     }
 }

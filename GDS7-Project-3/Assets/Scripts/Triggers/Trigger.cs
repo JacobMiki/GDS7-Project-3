@@ -3,6 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Numerics;
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace GDS7.Group1.Project3.Assets.Scripts.Triggers
 {
@@ -44,14 +48,22 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Triggers
         }
 
 
+#if UNITY_EDITOR
         private static Color _enabledGizmoColor = new Color(1f, 0.9f, 0.3f, 0.4f);
         private static Color _disabledGizmoColor = new Color(1f, 0.9f, 0.3f, 0.05f);
         private void OnDrawGizmos()
         {
             var collider = GetComponent<BoxCollider>();
-            Gizmos.color = _enabled ? _enabledGizmoColor : _disabledGizmoColor;
-            Gizmos.matrix = transform.localToWorldMatrix;
-            Gizmos.DrawCube(collider.center, collider.size);
+            Handles.color = _enabled ? _enabledGizmoColor : _disabledGizmoColor;
+            Handles.matrix = transform.localToWorldMatrix;
+            Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
+
+            Handles.DrawWireCube(collider.center, collider.size);
+
+            Handles.zTest = UnityEngine.Rendering.CompareFunction.Always;
+            Handles.color = Color.white;
+            Handles.matrix = UnityEngine.Matrix4x4.identity;
         }
+#endif
     }
 }

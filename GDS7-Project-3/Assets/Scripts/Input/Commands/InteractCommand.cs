@@ -18,7 +18,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
 
         private ITorchState _torchState;
         private PlayerSounds _sounds;
-        private bool _canInteract = true;
+
+        public InteractionZone InteractionZone { get; set; }
 
         private void Awake()
         {
@@ -28,20 +29,38 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
 
         public override void Execute()
         {
-            if (_torchState.HasTorch && _canInteract)
+            if (InteractionZone)
             {
-                _canInteract = false;
+                if (InteractionZone.IsInteracting)
+                {
+                    return;
+                }
+
+                InteractionZone.Interact(gameObject);
+                return;
+            }
+
+            if (_torchState.HasTorch)
+            {
+                if (_torchInteraction.isSwinging)
+                {
+                    return;
+                }
+
                 StartCoroutine(Cooldown());
                 _sounds.Play(PlayerSoundTypes.SWING);
                 _torchInteraction.StartSwing();
+                return;
             }
         }
 
         private IEnumerator Cooldown()
         {
             yield return new WaitForSeconds(_interactCooldown);
-            _canInteract = true;
-            _torchInteraction.EndSwing();
+            if (_torchInteraction.isSwinging)
+            {
+                _torchInteraction.EndSwing();
+            }
         }
     }
 }

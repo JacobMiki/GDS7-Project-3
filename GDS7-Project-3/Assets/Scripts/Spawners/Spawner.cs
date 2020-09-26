@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
+#if UNITY_EDITOR
 using UnityEngine;
+#endif
 
 namespace GDS7.Group1.Project3.Assets.Scripts.Spawners
 {
@@ -13,11 +16,15 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Spawners
             return Instantiate(_prefab, transform.position, transform.rotation);
         }
 
+#if UNITY_EDITOR
         private void OnDrawGizmos()
         {
-            Gizmos.matrix = transform.localToWorldMatrix;
-            Gizmos.color = _gizmosColor;
-            Gizmos.DrawSphere(Vector3.zero, 0.3f);
+            Handles.zTest = UnityEngine.Rendering.CompareFunction.LessEqual;
+            Handles.color = _gizmosColor;
+            Handles.SphereHandleCap(-1, transform.position, Quaternion.identity, 0.3f, EventType.Repaint);
+            Handles.color = Color.white;
+            Handles.zTest = UnityEngine.Rendering.CompareFunction.Always;
         }
+#endif
     }
 }

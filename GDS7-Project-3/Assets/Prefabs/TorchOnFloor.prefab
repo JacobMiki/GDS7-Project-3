@@ -550,6 +550,7 @@ GameObject:
   - component: {fileID: 2073366208907838465}
   - component: {fileID: 2073366208907838467}
   - component: {fileID: 2073366208907838466}
+  - component: {fileID: 9092060025773753861}
   m_Layer: 9
   m_Name: TorchOnFloor
   m_TagString: Untagged
@@ -598,6 +599,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b635722d568773e4fb5090df56f12ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9092060025773753861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073366208907838464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90dc4b4f851e5841b69c37f4cabad52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2073366208907838466}
+        m_TargetAssemblyTypeName: GDS7.Group1.Project3.Assets.Scripts.TorchOnFloorTrigger,
+          Assembly-CSharp
+        m_MethodName: PickUpTorch
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2073366208976625444
 GameObject:
   m_ObjectHideFlags: 0
