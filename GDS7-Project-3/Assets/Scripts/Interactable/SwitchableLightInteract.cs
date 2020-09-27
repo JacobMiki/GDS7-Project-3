@@ -31,6 +31,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
             var animator = interacting.GetComponentInChildren<Animator>();
             if (animator)
             {
+                interacting.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 interacting.transform.position = _animationSnapPoint.position;
                 interacting.transform.rotation = _animationSnapPoint.rotation;
                 animator.SetTrigger("Light Up");

@@ -13,11 +13,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3182197904489125695, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 1.8295938e+15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3182197904489125695, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 1.8319721e+15
+      value: 8e-44
+      objectReference: {fileID: 0}
+    - target: {fileID: 3182197904489125695, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: NaN
       objectReference: {fileID: 0}
     - target: {fileID: 3324265137633193891, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,6 +71,10 @@ PrefabInstance:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0620433052a3b440fb07bf49b674d10c, type: 3}
+    - target: {fileID: 6539734479126390395, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Direction
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6858011012895844000, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
       value: 7

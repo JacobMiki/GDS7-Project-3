@@ -12,10 +12,12 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
     class CameraLookCommand : Command
     {
         [SerializeField] private Transform _camera;
+        [SerializeField] private Vector2 _sensitivity = Vector2.one;
 
         private ILookInput _look;
         private CinemachineFreeLook _freeLookCamera;
         private Coroutine _lookCoroutine;
+        private WaitForFixedUpdate _waitForFixedUpdate = new WaitForFixedUpdate();
 
 
         private void Awake()
@@ -38,11 +40,11 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         {
             while (_look.LookDelta != Vector2.zero)
             {
+                yield return _waitForFixedUpdate;
 
-                _freeLookCamera.m_XAxis.m_InputAxisValue = _look.LookDelta.x;
-                _freeLookCamera.m_YAxis.m_InputAxisValue = _look.LookDelta.y;
+                _freeLookCamera.m_XAxis.m_InputAxisValue = _look.LookDelta.x * _sensitivity.x;
+                _freeLookCamera.m_YAxis.m_InputAxisValue = _look.LookDelta.y * _sensitivity.y;
 
-                yield return null;
             }
 
             _freeLookCamera.m_XAxis.m_InputAxisValue = 0;
