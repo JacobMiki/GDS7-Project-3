@@ -16,11 +16,14 @@ public class Menu : MonoBehaviour
     [SerializeField] private VideoPlayer _introPlayer;
     [SerializeField] private Level _startingLevel;
 
-    private void Start()
+    private void OnEnable()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        _firstSelected.Select();
+        if (_firstSelected)
+        {
+            _firstSelected.Select();
+        }
         _menus.SetActive(false);
         _introPlayer.Prepare();
         _introPlayer.Play();
@@ -30,8 +33,12 @@ public class Menu : MonoBehaviour
 
     private void _introPlayer_prepareCompleted(VideoPlayer source)
     {
+        _introPlayer.prepareCompleted -= _introPlayer_prepareCompleted;
         _menus.SetActive(true);
-        _firstSelected.Select();
+        if (_firstSelected)
+        {
+            _firstSelected.Select();
+        }
     }
 
     public void StartGame()
