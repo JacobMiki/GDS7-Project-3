@@ -15,6 +15,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private Selectable _firstSelected;
     [SerializeField] private VideoPlayer _introPlayer;
     [SerializeField] private Level _startingLevel;
+    [SerializeField] private Animator _animator;
 
     private void OnEnable()
     {
@@ -24,7 +25,6 @@ public class Menu : MonoBehaviour
         {
             _firstSelected.Select();
         }
-        _menus.SetActive(false);
         _introPlayer.Prepare();
         _introPlayer.Play();
         _introPlayer.Pause();
@@ -34,7 +34,7 @@ public class Menu : MonoBehaviour
     private void _introPlayer_prepareCompleted(VideoPlayer source)
     {
         _introPlayer.prepareCompleted -= _introPlayer_prepareCompleted;
-        _menus.SetActive(true);
+        _animator.SetTrigger("Intro");
         if (_firstSelected)
         {
             _firstSelected.Select();
@@ -43,8 +43,7 @@ public class Menu : MonoBehaviour
 
     public void StartGame()
     {
-        _menus.SetActive(false);
-        Destroy(_menus);
+        _animator.SetTrigger("Outro");
         _video.interactable = true;
         _video.Select();
         _introPlayer.loopPointReached += _introPlayer_loopPointReached;
