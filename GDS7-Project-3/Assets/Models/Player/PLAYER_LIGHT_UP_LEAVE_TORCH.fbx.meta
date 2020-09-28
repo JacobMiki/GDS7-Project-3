@@ -38,7 +38,7 @@ ModelImporter:
       name: Player_Light_Up_Leave_Torch
       takeName: Scene
       internalID: 0
-      firstFrame: 1
+      firstFrame: 0
       lastFrame: 60
       wrapMode: 0
       orientationOffsetY: 0

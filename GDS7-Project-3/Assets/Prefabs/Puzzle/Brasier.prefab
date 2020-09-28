@@ -6058,6 +6058,7 @@ MonoBehaviour:
   _onLightSwitch:
     m_PersistentCalls:
       m_Calls: []
+  _timeToLight: 1
 --- !u!114 &5923758917154361418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6072,6 +6073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _canToggle: 0
   _animationTime: 2
+  _timeToLight: 0.1
   _animationSnapPoint: {fileID: 6322006455195305751}
 --- !u!114 &1830447515310684099
 MonoBehaviour:

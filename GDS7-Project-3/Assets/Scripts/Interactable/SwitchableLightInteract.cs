@@ -9,6 +9,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
     {
         [SerializeField] private bool _canToggle;
         [SerializeField] private float _animationTime;
+        [SerializeField] private float _timeToLight = 1f;
         [SerializeField] private Transform _animationSnapPoint;
 
         private SwitchableLight _light;
@@ -20,14 +21,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
 
         public void Interact(GameObject interacting, InteractionZone zone)
         {
-            if (_canToggle)
-            {
-                _light.Toggle();
-            }
-            else
-            {
-                _light.Switch(true);
-            }
+            StartCoroutine(Light());
             var animator = interacting.GetComponentInChildren<Animator>();
             if (animator)
             {
@@ -43,6 +37,19 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
         {
             yield return new WaitForSeconds(_animationTime);
             zone.IsInteracting = false;
+        }
+
+        IEnumerator Light()
+        {
+            yield return new WaitForSeconds(_timeToLight);
+            if (_canToggle)
+            {
+                _light.Toggle();
+            }
+            else
+            {
+                _light.Switch(true);
+            }
         }
     }
 }
