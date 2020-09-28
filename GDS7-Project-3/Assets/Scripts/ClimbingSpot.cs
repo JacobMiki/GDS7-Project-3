@@ -99,7 +99,6 @@ public class ClimbingSpot : MonoBehaviour
 
         while (!groundedState.IsGrounded)
         {
-            Debug.Log("Not grounded");
             yield return null;
         }
 

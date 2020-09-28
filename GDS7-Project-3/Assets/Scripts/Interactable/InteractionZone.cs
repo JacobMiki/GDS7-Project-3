@@ -44,12 +44,12 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
             }
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerStay(Collider other)
         {
             if(other.CompareTag("Player"))
             {
                 var cmd = other.GetComponent<InteractCommand>();
-                if (cmd)
+                if (cmd && cmd.InteractionZone == null)
                 {
                     if (!_guard || _guard.CanInteract(other.gameObject, this))
                     {

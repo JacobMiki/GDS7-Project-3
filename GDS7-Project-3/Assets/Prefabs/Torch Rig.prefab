@@ -293,7 +293,7 @@ Light:
   m_BounceIntensity: 0
   m_ColorTemperature: 1700
   m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 1.06452975e+24, y: 4.4641444e+21, z: 6.839804e+25, w: 1.0688574e-38}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0.1
   m_ShadowAngle: 0
@@ -405,6 +405,8 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 8
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
 --- !u!1 &3917359402104281731
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +518,7 @@ MonoBehaviour:
   _swingSound: {fileID: 8300000, guid: 8f8ec6db01098e24790479b110eed513, type: 3}
   _audioSource: {fileID: 873667794156119098}
   _interactionTriggerCollider: {fileID: 8772064924146350239}
+  isSwinging: 0
 --- !u!330 &1741149394613482176
 ParticleSystemForceField:
   m_ObjectHideFlags: 0
@@ -1212,6 +1215,8 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 8
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
 --- !u!1 &6307501022640435523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,7 +1265,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 0620433052a3b440fb07bf49b674d10c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.731
-  m_Pitch: 1
+  m_Pitch: 1.2
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -6273,7 +6278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Version: 9
+  m_Version: 10
   m_ObsoleteShadowResolutionTier: 1
   m_ObsoleteUseShadowQualitySettings: 0
   m_ObsoleteCustomShadowResolution: 512
@@ -6369,6 +6374,8 @@ MonoBehaviour:
   useVolumetric: 1
   featuresFoldout: 1
   showAdditionalSettings: 8
+  m_AreaLightEmissiveMeshShadowCastingMode: 0
+  m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
 --- !u!1001 &7350190644089296147
 PrefabInstance:
   m_ObjectHideFlags: 0

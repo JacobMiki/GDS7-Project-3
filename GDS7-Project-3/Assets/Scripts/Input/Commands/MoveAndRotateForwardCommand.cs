@@ -22,6 +22,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         private float _turnSmoothVelocity;
         private float _fullSpeed;
 
+        private WaitForFixedUpdate _waitForFixedUpdate = new WaitForFixedUpdate();
+
         private void Awake()
         {
             _transform = transform;
@@ -58,16 +60,17 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         {
             while (_move.MoveDirection != Vector3.zero)
             {
+                yield return _waitForFixedUpdate;
+
                 var targetAngle = Mathf.Atan2(_move.MoveDirection.x, _move.MoveDirection.z) * Mathf.Rad2Deg + _camera.eulerAngles.y;
                 var angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothVelocity, _turnSmoothTime);
 
                 var moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
 
                 _rigidbody.MoveRotation(Quaternion.Euler(_transform.rotation.eulerAngles.x, angle, _transform.rotation.eulerAngles.z));
-                _rigidbody.MovePosition(_transform.position + moveDirection.normalized * _speed * Time.deltaTime);
+                _rigidbody.MovePosition(_transform.position + moveDirection.normalized * _speed * Time.fixedDeltaTime);
 
 
-                yield return null;
             }
 
             _moveCoroutine = null;

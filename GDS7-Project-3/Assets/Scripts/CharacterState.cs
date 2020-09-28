@@ -64,8 +64,9 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             rb.useGravity = true;
             var collider = torch.AddComponent<CapsuleCollider>();
             collider.radius = 0.05f;
-            collider.center = new Vector3(0.1f, 0, 0);
+            collider.center = new Vector3(0.05f, 0, 0);
             torch.layer = LayerMask.NameToLayer("Default");
+            rb.AddForce(transform.forward, ForceMode.Impulse);
             HasTorch = false;
             Destroy(torch.transform.Find("Torch").gameObject);
             Destroy(torch.GetComponent<Collider>(), 5f);
