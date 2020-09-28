@@ -26,7 +26,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
             Switch(on, true);
         }
 
-        public void Switch(bool on, bool emitEvent = true, bool instant = false)
+        public void Switch(bool on, bool emitEvent = true, bool instant = false, float addTime = 0f)
         {
             if (SwitchingDisabled || IsLightOn == on)
             {
@@ -40,7 +40,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
             }
             else
             {
-                StartCoroutine(Light(on));
+                StartCoroutine(Light(on, addTime));
             }
 
             if (emitEvent)
@@ -49,14 +49,14 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Interactable
             }
         }
 
-        public void Toggle(bool emitEvent = true, bool instant = false)
+        public void Toggle(bool emitEvent = true, bool instant = false, float addTime = 0f)
         {
-            Switch(!IsLightOn, emitEvent, instant);
+            Switch(!IsLightOn, emitEvent, instant, addTime);
         }
 
-        IEnumerator Light(bool on)
+        IEnumerator Light(bool on, float addTime)
         {
-            yield return new WaitForSeconds(_timeToLight);
+            yield return new WaitForSeconds(_timeToLight + addTime);
             _light.SetActive(IsLightOn);
         }
     }

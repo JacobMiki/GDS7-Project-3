@@ -52,13 +52,13 @@ namespace GDS7.Group1.Project3.Assets.Scripts
                     switch (influence.Type)
                     {
                         case BrazierPuzzlePieceInfluenceType.ON:
-                            influence.Other.Switch(true, emitEvent: false);
+                            influence.Other.Switch(true, emitEvent: false, addTime: 0.5f);
                             break;
                         case BrazierPuzzlePieceInfluenceType.OFF:
-                            influence.Other.Switch(false, emitEvent: false);
+                            influence.Other.Switch(false, emitEvent: false, addTime: 0.5f);
                             break;
                         case BrazierPuzzlePieceInfluenceType.TOGGLE:
-                            influence.Other.Toggle(emitEvent: false);
+                            influence.Other.Toggle(emitEvent: false, addTime: 0.5f);
                             break;
                     }
                 }

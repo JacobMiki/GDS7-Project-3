@@ -42,8 +42,8 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
             {
                 yield return _waitForFixedUpdate;
 
-                _freeLookCamera.m_XAxis.m_InputAxisValue = _look.LookDelta.x * _sensitivity.x;
-                _freeLookCamera.m_YAxis.m_InputAxisValue = _look.LookDelta.y * _sensitivity.y;
+                _freeLookCamera.m_XAxis.m_InputAxisValue = _look.LookDelta.x * _sensitivity.x * GameManager.Instance.Settings.horizontalSensitivity;
+                _freeLookCamera.m_YAxis.m_InputAxisValue = _look.LookDelta.y * _sensitivity.y * GameManager.Instance.Settings.verticalSensitivity;
 
             }
 

@@ -933,7 +933,7 @@ MonoBehaviour:
       - m_Target: {fileID: 1336588198}
         m_TargetAssemblyTypeName: GDS7.Group1.Project3.Assets.Scripts.Interactable.SwitchableLight,
           Assembly-CSharp
-        m_MethodName: Toggle
+        m_MethodName: Switch
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
