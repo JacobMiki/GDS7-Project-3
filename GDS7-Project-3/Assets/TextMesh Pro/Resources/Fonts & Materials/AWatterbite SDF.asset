@@ -4736,9 +4736,9 @@ MonoBehaviour:
     packingMode: 4
     atlasWidth: 1024
     atlasHeight: 1024
-    characterSetSelectionMode: 1
-    characterSequence: 32 - 126, 160 - 255, 8192 - 8303, 8364, 8482, 9633
-    referencedFontAssetGUID: 64aac340b31c09247a06df6d0ee5daea
+    characterSetSelectionMode: 6
+    characterSequence: 20-7E,A0-AA,AD-AE,B0-B1,B4-B8,BF-FF,2018-201A,201C-201E,2020-2021,20AC,2122
+    referencedFontAssetGUID: 4c390e646dc119648a4781bbfc56c8c2
     referencedTextAssetGUID: 
     fontStyle: 0
     fontStyleModifier: 0

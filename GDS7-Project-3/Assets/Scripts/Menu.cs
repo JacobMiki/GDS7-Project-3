@@ -22,6 +22,9 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         [SerializeField] private Slider _horiSensitivitySlider;
         [SerializeField] private Slider _vertSensitivitySlider;
 
+        [Header("Credits")]
+        [SerializeField] private Credits _credits;
+
         [Header("Video")]
         [SerializeField] private VideoPlayer _introPlayer;
         [SerializeField] private GameObject _canSkipText;
@@ -77,7 +80,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             _introPlayer.Play();
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            _inputActions.Player.Interact.performed += Interact_performed;
+            _inputActions.Player.Interact.performed += SkipIntroOnInteract;
             _inputActions.Enable();
             StartCoroutine(WaitForLevelReady());
             Application.backgroundLoadingPriority = ThreadPriority.Low;
@@ -102,6 +105,27 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         public void ToMain()
         {
             _animator.SetTrigger("ToMain");
+        }
+
+        public void RollCredits()
+        {
+            _credits.onFinish += _credits_onFinish;
+            _inputActions.Player.Interact.performed += SkipCreditsOnInteract;
+            _inputActions.Enable();
+            _credits.gameObject.SetActive(true);
+        }
+
+        private void SkipCreditsOnInteract(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+        {
+            _credits.gameObject.SetActive(false);
+            _credits.onFinish -= _credits_onFinish;
+            _inputActions.Disable();
+            _inputActions.Player.Interact.performed -= SkipCreditsOnInteract;
+        }
+
+        private void _credits_onFinish()
+        {
+            _credits.onFinish -= _credits_onFinish;
         }
 
         public void OnMasterVolumeChange(float value)
@@ -160,7 +184,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             GameManager.Instance.Settings.horizontalSensitivity = value;
         }
 
-        private void Interact_performed(UnityEngine.InputSystem.InputAction.CallbackContext obj)
+        private void SkipIntroOnInteract(UnityEngine.InputSystem.InputAction.CallbackContext obj)
         {
             SkipIntro();
         }
@@ -182,7 +206,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             {
                 _introPlayer.loopPointReached -= _introPlayer_loopPointReached;
                 _inputActions.Disable();
-                _inputActions.Player.Interact.performed -= Interact_performed;
+                _inputActions.Player.Interact.performed -= SkipIntroOnInteract;
                 SwitchToGame();
             }
         }
@@ -205,12 +229,16 @@ namespace GDS7.Group1.Project3.Assets.Scripts
                 return;
             }
             _switchingToGame = true;
-            SceneManager.activeSceneChanged += (oldS, newS) =>
-            {
-                SceneManager.UnloadSceneAsync("_Menu");
-            };
+            SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
             LevelLoader.CanActivateLevel = true;
             Destroy(_introPlayer.gameObject, 0);
+        }
+
+        private void SceneManager_activeSceneChanged(UnityEngine.SceneManagement.Scene arg0, UnityEngine.SceneManagement.Scene arg1)
+        {
+            SceneManager.activeSceneChanged -= SceneManager_activeSceneChanged;
+            LevelLoader.CanActivateLevel = false;
+            SceneManager.UnloadSceneAsync("_Menu");
         }
     }
 }

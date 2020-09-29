@@ -24,7 +24,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         [SerializeField] private AudioMixer _masterMixer;
         [SerializeField] private AudioMixer _gameMixer;
 
-        public Settings Settings { get; private set; }
+        public Settings Settings { get; private set; } = new Settings();
 
         private void Awake()
         {
@@ -42,10 +42,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             {
                 var settings = System.IO.File.ReadAllText(Application.persistentDataPath + "/Settings.json");
                 Settings = JsonUtility.FromJson<Settings>(settings) ?? new Settings();
-            }
-            else
-            {
-                Settings = new Settings();
             }
             StartCoroutine(ApplySoundSettingsCoroutine());
         }
