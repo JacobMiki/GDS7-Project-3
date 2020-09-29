@@ -1381,6 +1381,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862595264}
     m_Modifications:
+    - target: {fileID: 1060145022194283737, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 1847037724854012629, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
       value: 7
@@ -1744,6 +1748,10 @@ PrefabInstance:
     - target: {fileID: 4009438255870372567, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619699052579197621, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
       objectReference: {fileID: 0}
     - target: {fileID: 5000018658699995878, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: _canToggle
@@ -3448,6 +3456,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862595264}
     m_Modifications:
+    - target: {fileID: 1060145022194283737, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 1847037724854012629, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
       value: 7
@@ -3811,6 +3823,10 @@ PrefabInstance:
     - target: {fileID: 4009438255870372567, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619699052579197621, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
       objectReference: {fileID: 0}
     - target: {fileID: 5000018658699995878, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: _canToggle
@@ -4762,6 +4778,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862595264}
     m_Modifications:
+    - target: {fileID: 1060145022194283737, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 1847037724854012629, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
       value: 7
@@ -5121,6 +5141,10 @@ PrefabInstance:
     - target: {fileID: 4009438255870372567, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619699052579197621, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
       objectReference: {fileID: 0}
     - target: {fileID: 5000018658699995878, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: _canToggle
@@ -7423,6 +7447,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1862595264}
     m_Modifications:
+    - target: {fileID: 1060145022194283737, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 1847037724854012629, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_PropertySheet.m_Float.m_Array.Array.size
       value: 7
@@ -7786,6 +7814,10 @@ PrefabInstance:
     - target: {fileID: 4009438255870372567, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4619699052579197621, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
       objectReference: {fileID: 0}
     - target: {fileID: 5000018658699995878, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: _canToggle
@@ -9546,16 +9578,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6140590627039142421, guid: 49dcff17f046597468b94a4848e6d27a, type: 3}
-      propertyPath: m_Intensity
-      value: 0.16663912
-      objectReference: {fileID: 0}
-    - target: {fileID: 6140590627039142421, guid: 49dcff17f046597468b94a4848e6d27a, type: 3}
       propertyPath: m_BoundingSphereOverride.w
       value: 30.54749
       objectReference: {fileID: 0}
     - target: {fileID: 6140590627039142421, guid: 49dcff17f046597468b94a4848e6d27a, type: 3}
-      propertyPath: m_Range
-      value: 20
+      propertyPath: m_Intensity
+      value: 0.16663912
       objectReference: {fileID: 0}
     - target: {fileID: 6259651050773350352, guid: 49dcff17f046597468b94a4848e6d27a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9577,10 +9605,6 @@ PrefabInstance:
       propertyPath: Loop
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6857322746264154929, guid: 49dcff17f046597468b94a4848e6d27a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 7.43
-      objectReference: {fileID: 0}
     - target: {fileID: 7168364872376728446, guid: 49dcff17f046597468b94a4848e6d27a, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1.89
@@ -9592,6 +9616,10 @@ PrefabInstance:
     - target: {fileID: 7168364872376728446, guid: 49dcff17f046597468b94a4848e6d27a, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.261
+      objectReference: {fileID: 0}
+    - target: {fileID: 7622778863172189729, guid: 49dcff17f046597468b94a4848e6d27a, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
       objectReference: {fileID: 0}
     - target: {fileID: 8023312933377257453, guid: 49dcff17f046597468b94a4848e6d27a, type: 3}
       propertyPath: m_Intensity

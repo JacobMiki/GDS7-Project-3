@@ -299,6 +299,10 @@ PrefabInstance:
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 385076327}
+    - target: {fileID: 473164280100159168, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 1374056339548373155, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -367,6 +371,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5204780113509292204, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 7056287879699342203, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
@@ -1429,7 +1437,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3212451271135331392, guid: ce1221d7de9dfcf478d44b6442ac96a7, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3212451271135331392, guid: ce1221d7de9dfcf478d44b6442ac96a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2153,6 +2161,10 @@ PrefabInstance:
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1262363804}
+    - target: {fileID: 473164280100159168, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 1374056339548373155, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -2217,6 +2229,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5204780113509292204, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 7056287879699342203, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
@@ -2501,6 +2517,10 @@ PrefabInstance:
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1484991854}
+    - target: {fileID: 473164280100159168, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 1374056339548373155, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -2565,6 +2585,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5204780113509292204, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 7056287879699342203, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
@@ -3105,7 +3129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3212451271135331392, guid: ce1221d7de9dfcf478d44b6442ac96a7, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 3212451271135331392, guid: ce1221d7de9dfcf478d44b6442ac96a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4051,6 +4075,10 @@ PrefabInstance:
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 561342315}
+    - target: {fileID: 473164280100159168, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 1374056339548373155, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -4115,6 +4143,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5204780113509292204, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 7056287879699342203, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
@@ -4360,6 +4392,10 @@ PrefabInstance:
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 473164280100159168, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 1374056339548373155, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_Layer
       value: 0
@@ -4424,6 +4460,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5204780113509292204, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 7056287879699342203, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
@@ -4842,6 +4882,10 @@ PrefabInstance:
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 178022879}
+    - target: {fileID: 473164280100159168, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 1374056339548373155, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -4910,6 +4954,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5204780113509292204, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 7056287879699342203, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
@@ -5421,6 +5469,10 @@ PrefabInstance:
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1844348105}
+    - target: {fileID: 473164280100159168, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 1374056339548373155, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_Layer
       value: 9
@@ -5485,6 +5537,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5204780113509292204, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
     - target: {fileID: 7056287879699342203, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8

@@ -3310,6 +3310,10 @@ PrefabInstance:
       propertyPath: _canToggle
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 473164280100159168, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 3324265137633193891, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4359999
@@ -4113,7 +4117,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh165238
+  m_Name: pb_Mesh337972
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4717,6 +4721,10 @@ PrefabInstance:
       propertyPath: _onLightSwitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1171219848}
+    - target: {fileID: 473164280100159168, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 3324265137633193891, guid: e6105c8bcf1ef5444bfd2c418762dc9c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.089246

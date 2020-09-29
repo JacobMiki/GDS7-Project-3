@@ -1192,6 +1192,10 @@ PrefabInstance:
       propertyPath: m_UseContactShadow.m_Override
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4619699052579197621, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Intensity
+      value: 47.746483
+      objectReference: {fileID: 0}
     - target: {fileID: 5083846720530067694, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_BoundingSphereOverride.x
       value: 0

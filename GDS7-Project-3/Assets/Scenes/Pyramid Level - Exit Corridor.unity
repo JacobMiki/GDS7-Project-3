@@ -3268,6 +3268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _endScreenName: The End Screen
   _creditsName: Credits
+  _blackOverlayName: Black background
 --- !u!1 &1691946529
 GameObject:
   m_ObjectHideFlags: 0
