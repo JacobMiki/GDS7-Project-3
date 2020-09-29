@@ -22,27 +22,27 @@ public class Cheats : MonoBehaviour
 
     public void MovePlayerToLargeRoom()
     {
-        GameObject.Find("Player").transform.position = _largeRoomTarget.position;
+        GameManager.Instance.Player.transform.position = _largeRoomTarget.position;
     }
 
     public void MovePlayerToStaircase()
     {
-        GameObject.Find("Player").transform.position = _staircaseTarget.position;
+        GameManager.Instance.Player.transform.position = _staircaseTarget.position;
     }
 
     public void MovePlayerToLabirynth()
     {
-        GameObject.Find("Player").transform.position = _labirynthTarget.position;
+        GameManager.Instance.Player.transform.position = _labirynthTarget.position;
     }
     
     public void MovePlayerToExit()
     {
-        GameObject.Find("Player").transform.position = _exitTarget.position;
+        GameManager.Instance.Player.transform.position = _exitTarget.position;
     }
 
     public void TogglePlayerTorch()
     {
-        var torchState = GameObject.Find("Player").GetComponent<ITorchState>();
+        var torchState = GameManager.Instance.Player.GetComponent<ITorchState>();
         torchState.HasTorch = !torchState.HasTorch;
     }
 

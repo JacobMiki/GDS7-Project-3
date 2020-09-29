@@ -32,7 +32,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
 
         private void OnEnable()
         {
-            _player = GameObject.Find("Player");
+            _player = GameManager.Instance.Player;
             _playerSafeState = _player.GetComponent<ISafeState>();
             _playerTorchState = _player.GetComponent<ITorchState>();
             _enemyInstance = null;

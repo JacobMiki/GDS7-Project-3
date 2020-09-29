@@ -21,7 +21,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         void OnEnable()
         {
-            _player = GameObject.Find("Player");
+            _player = GameManager.Instance.Player;
         }
 
         void LateUpdate()

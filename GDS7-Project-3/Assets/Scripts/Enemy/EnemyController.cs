@@ -45,7 +45,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Enemy
 
         public void Activate()
         {
-            _player = GameObject.Find("Player");
+            _player = GameManager.Instance.Player;
             _active = true;
             _animator.SetBool("IsRunning", true);
             FindTarget();

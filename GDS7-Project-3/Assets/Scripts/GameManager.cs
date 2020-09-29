@@ -23,8 +23,19 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         [SerializeField] private AudioMixer _masterMixer;
         [SerializeField] private AudioMixer _gameMixer;
+        private GameObject _player;
 
-        public Settings Settings { get; private set; } = new Settings();
+        public Settings Settings { get; private set; } = new Settings(); 
+        public GameObject Player { 
+            get
+            {
+                if(!_player)
+                {
+                    _player = GameObject.Find("Player");
+                }
+                return _player;
+            }
+        }
 
         private void Awake()
         {

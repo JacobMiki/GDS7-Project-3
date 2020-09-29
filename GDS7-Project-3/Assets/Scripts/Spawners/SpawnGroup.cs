@@ -27,7 +27,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Spawners
             }
 
             var spawners = GetSpawners();
-            var player = GameObject.FindGameObjectWithTag("Player");
+            var player = GameManager.Instance.Player;
 
             switch (_spawnGroupMode)
             {

@@ -70,7 +70,7 @@ public class BrasierPuzzleHints : MonoBehaviour
             yield return null;
         }
 
-        var player = GameObject.FindGameObjectWithTag("Player");
+        var player = GameManager.Instance.Player;
         _hintingAt = remaining.OrderBy(b =>
         {
             NavMeshPath path = new NavMeshPath();
