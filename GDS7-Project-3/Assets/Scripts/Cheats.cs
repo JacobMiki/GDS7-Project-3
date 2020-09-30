@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using GDS7.Group1.Project3.Assets.Scripts;
 using GDS7.Group1.Project3.Assets.Scripts.Enemy;
+using GDS7.Group1.Project3.Assets.Scripts.Interactable;
 using GDS7.Group1.Project3.Assets.Scripts.State;
 using UnityEngine;
 using UnityEngine.AI;
@@ -51,7 +52,15 @@ public class Cheats : MonoBehaviour
         GameObject.Find("Labyrinth Brasier Puzzle").GetComponent<BrasierPuzzle>().ForceSolve();
     }
 
-
+    public void FindAllCoins()
+    {
+        foreach(var coin in CollectableManager.Instance.collectableInteracts)
+        {
+            coin.collected = true;
+            Destroy(coin.GetComponentInChildren<MeshRenderer>().gameObject);
+        }
+        CollectableManager.Instance.UpdateCollectables();
+    }
 
 
 }

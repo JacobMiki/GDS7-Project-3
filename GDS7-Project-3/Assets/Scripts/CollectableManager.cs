@@ -30,6 +30,12 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         public void UpdateCollectables()
         {
             collectedCount = collectableInteracts.Count(c => c.collected);
+            if (collectedCount == collectableInteracts.Count)
+            {
+                var screens = GameObject.FindGameObjectWithTag("Screens");
+                var achievement = screens.transform.Find("Achievement");
+                achievement.gameObject.SetActive(true);
+            }
         }
     }
 }
