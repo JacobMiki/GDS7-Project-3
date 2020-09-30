@@ -67,16 +67,50 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         }
 
+        private bool _paused = false;
+        private bool _onUnpauseCameraEnabled = false;
+        private bool _onUnpauseInputsEnabled = false;
         private void OnPause(InputAction.CallbackContext obj)
         {
-#if DEBUG
-            Cursor.visible = !Cursor.visible;
-            Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
-            CameraEnabled = !CameraEnabled;
-            InputsEnabled = !InputsEnabled;
-#else
-            Application.Quit();
-#endif
+            _paused = !_paused;
+
+            var screens = GameObject.FindGameObjectWithTag("Screens");
+            var pause = screens.transform.Find("Pause");
+            pause.gameObject.SetActive(_paused);
+
+            Cursor.visible = _paused;
+            if (_paused)
+            {
+                _onUnpauseCameraEnabled = CameraEnabled;
+                _onUnpauseInputsEnabled = InputsEnabled;
+                CameraEnabled = false;
+                InputsEnabled = false;
+                Cursor.lockState = CursorLockMode.None;
+                Time.timeScale = 0f;
+                StartCoroutine(WaitForPauseEnd(pause.gameObject));
+            }
+            else
+            {
+                CameraEnabled = _onUnpauseCameraEnabled;
+                InputsEnabled = _onUnpauseInputsEnabled;
+                Cursor.lockState = CursorLockMode.Locked;
+                Time.timeScale = 1f;
+            }
+        }
+
+        private IEnumerator WaitForPauseEnd(GameObject pause)
+        {
+            while(pause.activeSelf)
+            {
+                yield return null;
+            }
+
+            _paused = false;
+            Cursor.visible = false;
+            CameraEnabled = _onUnpauseCameraEnabled;
+            InputsEnabled = _onUnpauseInputsEnabled;
+            Cursor.lockState = CursorLockMode.Locked;
+            Time.timeScale = 1f;
         }
 
         private void OnInteract(InputAction.CallbackContext obj)
