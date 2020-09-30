@@ -938,7 +938,7 @@ MonoBehaviour:
   m_ShadowVariant: 0
   m_ShadowPrecision: 0
   useOldInspector: 0
-  useVolumetric: 1
+  useVolumetric: 0
   featuresFoldout: 1
   showAdditionalSettings: 0
   m_AreaLightEmissiveMeshShadowCastingMode: 0
@@ -2545,7 +2545,7 @@ PrefabInstance:
     - target: {fileID: -1504981713932161579, guid: 36ae6b21a49d3a444815edd8d7b127fa, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 873673e7996336b46996f44794d30c9e, type: 2}
+      objectReference: {fileID: 2100000, guid: 5c640947d33ee9b4e941272ba0e058d9, type: 2}
     - target: {fileID: -927199367670048503, guid: 36ae6b21a49d3a444815edd8d7b127fa, type: 3}
       propertyPath: m_Name
       value: MUMIA_KOTA (2)
