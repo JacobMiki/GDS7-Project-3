@@ -39,17 +39,23 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void OnEnable()
         {
-            _inputActions = new PlayerInputActions();
+            if (_inputActions == null)
+            {
+                _inputActions = new PlayerInputActions();
+            }
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
             if (_firstSelected)
             {
                 _firstSelected.Select();
             }
-            _introPlayer.Prepare();
-            _introPlayer.Play();
-            _introPlayer.Pause();
-            _introPlayer.prepareCompleted += _introPlayer_prepareCompleted;
+            if (_introPlayer)
+            {
+                _introPlayer.Prepare();
+                _introPlayer.Play();
+                _introPlayer.Pause();
+                _introPlayer.prepareCompleted += _introPlayer_prepareCompleted;
+            }
 
             _settingsInit = true;
             _masterVolumeSlider.value = GameManager.Instance.Settings.masterVolume;
@@ -70,6 +76,17 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             {
                 _firstSelected.Select();
             }
+        }
+
+        public void ExitToMenu()
+        {
+            Time.timeScale = 1f;
+            GameManager.Instance.SaveSettings();
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.ExitPlaymode();
+#else
+            SceneManager.LoadScene("_Master");
+#endif
         }
 
         public void StartGame()
@@ -199,18 +216,16 @@ namespace GDS7.Group1.Project3.Assets.Scripts
         private bool _skippingIntro = false;
         public void SkipIntro()
         {
-            if (_skippingIntro)
+
+            if (_skippingIntro || !LevelLoader.LevelReady)
             {
                 return;
             }
             _skippingIntro = true;
-            if (LevelLoader.LevelReady)
-            {
-                _introPlayer.loopPointReached -= _introPlayer_loopPointReached;
-                _inputActions.Disable();
-                _inputActions.Player.Interact.performed -= SkipIntroOnInteract;
-                SwitchToGame();
-            }
+            _introPlayer.loopPointReached -= _introPlayer_loopPointReached;
+            _inputActions.Disable();
+            _inputActions.Player.Interact.performed -= SkipIntroOnInteract;
+            SwitchToGame();
         }
 
         private IEnumerator WaitForLevelReady()
