@@ -2038,6 +2038,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Labirynt - Light Rig
       objectReference: {fileID: 0}
+    - target: {fileID: 4343968986777580509, guid: f566deb3e77f1e74b91bb0c54dacf75f, type: 3}
+      propertyPath: m_Size.z
+      value: 45.05807
+      objectReference: {fileID: 0}
+    - target: {fileID: 4343968986777580509, guid: f566deb3e77f1e74b91bb0c54dacf75f, type: 3}
+      propertyPath: m_Center.z
+      value: 3.8422298
+      objectReference: {fileID: 0}
     - target: {fileID: 7312225459075867275, guid: f566deb3e77f1e74b91bb0c54dacf75f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

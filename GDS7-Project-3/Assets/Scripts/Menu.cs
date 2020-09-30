@@ -27,6 +27,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         [Header("Video")]
         [SerializeField] private VideoPlayer _introPlayer;
+        [SerializeField] private AudioSource _screamAudio;
         [SerializeField] private GameObject _canSkipText;
 
         [Header("Level")]
@@ -191,6 +192,7 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void _introPlayer_loopPointReached(VideoPlayer source)
         {
+            _screamAudio.Play();
             SwitchToGame();
         }
 
@@ -231,7 +233,6 @@ namespace GDS7.Group1.Project3.Assets.Scripts
             _switchingToGame = true;
             SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
             LevelLoader.CanActivateLevel = true;
-            Destroy(_introPlayer.gameObject, 0);
         }
 
         private void SceneManager_activeSceneChanged(UnityEngine.SceneManagement.Scene arg0, UnityEngine.SceneManagement.Scene arg1)
