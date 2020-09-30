@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: f84c0a67d21b6014090e1044b6a4c0a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: ProBuilder_Default_HDRP
     second: {fileID: 2100000, guid: d2aacc90936950542a0f828834ad00d1, type: 2}
   materials:

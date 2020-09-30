@@ -3,7 +3,17 @@ guid: aa1de9482db1c23419c7113fd5ff4f80
 ModelImporter:
   serializedVersion: 20100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PIASEK_TOP_TEMP
+    second: {fileID: 2100000, guid: 130a649b8c59e7047990a279e336df92, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PLYTY
+    second: {fileID: 2100000, guid: aab0464f82322424b8f0ae26fb0d71b0, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
