@@ -48,7 +48,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: PIACH
-    second: {fileID: 2100000, guid: f031cf6cc9ec6a445a0bc4ce4ad3b31b, type: 2}
+    second: {fileID: -8242792141938730429, guid: aa1de9482db1c23419c7113fd5ff4f80, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
