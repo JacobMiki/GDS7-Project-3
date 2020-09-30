@@ -68,6 +68,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: PIACH
     second: {fileID: 2100000, guid: 007c6d8aa3bd50d4dbaa1ee0f02b8ac1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ROBES
+    second: {fileID: 2100000, guid: 46dd75b8ad9b77543a36f527dc8d7848, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WALLS
+    second: {fileID: 2100000, guid: 034ac5416693b7546a3682eb3236a9db, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -50,8 +50,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: OKI
+    second: {fileID: 2100000, guid: 873673e7996336b46996f44794d30c9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: TEMP
     second: {fileID: 2100000, guid: 13adba1e00acce042b5fcc3399fbd144, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TEMP.002
+    second: {fileID: 2100000, guid: 1550f70f942fd364b9bcc195e211ede6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
