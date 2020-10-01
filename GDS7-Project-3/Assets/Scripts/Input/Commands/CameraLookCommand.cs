@@ -11,11 +11,11 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
 {
     class CameraLookCommand : Command
     {
-        [SerializeField] private Transform _camera;
+        [SerializeField] private CinemachineFreeLook _freeLookCamera;
+        [SerializeField] private CinemachineFreeLook _climbCamera;
         [SerializeField] private Vector2 _sensitivity = Vector2.one;
 
         private ILookInput _look;
-        private CinemachineFreeLook _freeLookCamera;
         private Coroutine _lookCoroutine;
         private WaitForFixedUpdate _waitForFixedUpdate = new WaitForFixedUpdate();
 
@@ -23,9 +23,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
         private void Awake()
         {
             _look = GetComponent<ILookInput>();
-            _freeLookCamera = _camera.GetComponent<CinemachineFreeLook>();
             _freeLookCamera.m_XAxis.m_InputAxisName = "";
             _freeLookCamera.m_YAxis.m_InputAxisName = "";
+            _climbCamera.m_XAxis.m_InputAxisName = "";
+            _climbCamera.m_YAxis.m_InputAxisName = "";
         }
 
         public override void Execute()
@@ -44,6 +45,10 @@ namespace GDS7.Group1.Project3.Assets.Scripts.Input.Commands
 
                 _freeLookCamera.m_XAxis.m_InputAxisValue = _look.LookDelta.x * _sensitivity.x * GameManager.Instance.Settings.horizontalSensitivity;
                 _freeLookCamera.m_YAxis.m_InputAxisValue = _look.LookDelta.y * _sensitivity.y * GameManager.Instance.Settings.verticalSensitivity;
+
+                _climbCamera.m_XAxis.Value = _freeLookCamera.m_XAxis.Value;
+                _climbCamera.m_YAxis.Value = _freeLookCamera.m_YAxis.Value;
+
 
             }
 
