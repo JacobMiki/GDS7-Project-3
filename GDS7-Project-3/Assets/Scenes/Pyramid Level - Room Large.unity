@@ -4830,6 +4830,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498759260218117155, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
+      propertyPath: m_Name
+      value: Climbing Spot (23)
+      objectReference: {fileID: 0}
     - target: {fileID: 3296283500605822521, guid: 7ec3f47426d7ac045b7f84afa26d5841, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -4877,30 +4901,6 @@ PrefabInstance:
     - target: {fileID: 3296283502207626951, guid: 7ec3f47426d7ac045b7f84afa26d5841, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7498759260218117154, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7498759260218117155, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
-      propertyPath: m_Name
-      value: Climbing Spot (23)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48dfb45f23548504ead198a7cc674f9d, type: 3}
@@ -5541,7 +5541,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 0
-  m_Range: 10
+  m_Range: 15.067604
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
