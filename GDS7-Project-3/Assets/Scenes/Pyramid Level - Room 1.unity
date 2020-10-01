@@ -1232,6 +1232,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: -3188856450117780397, guid: 07b1f474d531f874eb6dce9fdcf5f51d, type: 2}
+    - target: {fileID: 2170580236996438454, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0f708dedfabad3f4dbc697b729a7adf2, type: 2}
     - target: {fileID: 3015044641867900850, guid: 37439c2a6ce181c4ab0ae51ec90d8681, type: 3}
       propertyPath: m_Name
       value: Puzzle Brasier
@@ -2640,6 +2644,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1571352251}
+    - target: {fileID: 7689183844371607330, guid: 7ec3f47426d7ac045b7f84afa26d5841, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5c640947d33ee9b4e941272ba0e058d9, type: 2}
     - target: {fileID: 8807789103518473257, guid: 7ec3f47426d7ac045b7f84afa26d5841, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

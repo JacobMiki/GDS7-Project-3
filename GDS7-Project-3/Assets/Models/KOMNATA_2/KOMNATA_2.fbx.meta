@@ -55,6 +55,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: ORNAMENTY
+    second: {fileID: 2100000, guid: 0f708dedfabad3f4dbc697b729a7adf2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: TEMP
     second: {fileID: 2100000, guid: 13adba1e00acce042b5fcc3399fbd144, type: 2}
   - first:
