@@ -37,6 +37,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: PAJECZYNA
     second: {fileID: 2100000, guid: 5b10c64eb497eee4bae8515dd0e3d16f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PIACH
+    second: {fileID: -8242792141938730429, guid: d2b3491825253c44eb74966c518c86ab, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -69,7 +74,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
     importVisibility: 1
