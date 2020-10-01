@@ -9,6 +9,21 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: No Name
     second: {fileID: 2100000, guid: cf24ee813bb14d543a8c83f844d6fd98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cooper
+    second: {fileID: 2100000, guid: 43d8f5b6d2b3e1b4aacae9cb2af805c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 6ec0deb9ae0864746b18ab89145ca88c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: d9acc513aa297c84a80b6792386072b8, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

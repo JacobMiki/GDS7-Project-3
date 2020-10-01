@@ -1862,7 +1862,11 @@ PrefabInstance:
     - target: {fileID: -1504981713932161579, guid: b91731b29646fff4f8a9628b59b6036c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: b99b81e00f27d534785917fa31f16173, type: 2}
+      objectReference: {fileID: 2100000, guid: d9acc513aa297c84a80b6792386072b8, type: 2}
+    - target: {fileID: -1504981713932161579, guid: b91731b29646fff4f8a9628b59b6036c, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 43d8f5b6d2b3e1b4aacae9cb2af805c4, type: 2}
     - target: {fileID: -927199367670048503, guid: b91731b29646fff4f8a9628b59b6036c, type: 3}
       propertyPath: m_Name
       value: TARCZA (1)
@@ -1998,6 +2002,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 52e263cb0dcc59348a7ca1985dcf3524, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a0333ead119d744d9bafc1c1d31a2d9, type: 2}
     - target: {fileID: -927199367670048503, guid: 52e263cb0dcc59348a7ca1985dcf3524, type: 3}
       propertyPath: m_Name
       value: WAZA_1
@@ -2740,6 +2748,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 81.228
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: c5b91d28c7f103849b43cea68fb23360, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cbf5a899cf624d84e9f8977c1781a179, type: 2}
     - target: {fileID: -927199367670048503, guid: c5b91d28c7f103849b43cea68fb23360, type: 3}
       propertyPath: m_Name
       value: WAZA
@@ -4856,6 +4868,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -281.827
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: b91731b29646fff4f8a9628b59b6036c, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 43d8f5b6d2b3e1b4aacae9cb2af805c4, type: 2}
+    - target: {fileID: -1504981713932161579, guid: b91731b29646fff4f8a9628b59b6036c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d9acc513aa297c84a80b6792386072b8, type: 2}
     - target: {fileID: -927199367670048503, guid: b91731b29646fff4f8a9628b59b6036c, type: 3}
       propertyPath: m_Name
       value: TARCZA
