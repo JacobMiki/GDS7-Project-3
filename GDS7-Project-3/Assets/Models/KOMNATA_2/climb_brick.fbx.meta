@@ -3,7 +3,12 @@ guid: eab40ca42483875489681ea21fa1386e
 ModelImporter:
   serializedVersion: 20100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: climb
+    second: {fileID: 2100000, guid: 43d8f5b6d2b3e1b4aacae9cb2af805c4, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
