@@ -6,11 +6,61 @@ ModelImporter:
   - first:
       74: -623603649343465320
     second: Scene
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRZAIER_ZAGADKA 1.002
+    second: {fileID: 2100000, guid: 28ffd552c238679459991ef258b52658, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRZAIER_ZAGADKA 2.002
+    second: {fileID: 2100000, guid: 93a1da3a47766e841a9ad5a7bf6d8772, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRZAIER_ZAGADKA 3.002
+    second: {fileID: 2100000, guid: 737580ce28c6106468d54aacc2960f40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRZAIER_ZAGADKA 4.002
+    second: {fileID: 2100000, guid: defe8b7f4db64ec438e99f7486ce35bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8a3c8d498a6d30c4aba9b390ca4ceefb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ORNAMENTY
+    second: {fileID: 2100000, guid: 43d8f5b6d2b3e1b4aacae9cb2af805c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PAJECZYNA.002
+    second: {fileID: 2100000, guid: 1ce653e206d0e1b43af9b572863bf0d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TEMP.002
+    second: {fileID: 2100000, guid: 1550f70f942fd364b9bcc195e211ede6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WALL
+    second: {fileID: 2100000, guid: e8768063c4add8c4a8bc68f22dc8fa93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: palenisko_temp
+    second: {fileID: 2100000, guid: bc1b17385a3514f4680cef40ec2ea5ac, type: 2}
   materials:
     materialImportMode: 1
-    materialName: 0
-    materialSearch: 1
+    materialName: 1
+    materialSearch: 2
     materialLocation: 1
   animations:
     legacyGenerateAnimations: 4

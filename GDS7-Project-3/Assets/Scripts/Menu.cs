@@ -209,7 +209,13 @@ namespace GDS7.Group1.Project3.Assets.Scripts
 
         private void _introPlayer_loopPointReached(VideoPlayer source)
         {
+            StartCoroutine(SkipToGameCoroutine());
+        }
+
+        IEnumerator SkipToGameCoroutine()
+        {
             _screamAudio.Play();
+            yield return new WaitForEndOfFrame();
             SwitchToGame();
         }
 
