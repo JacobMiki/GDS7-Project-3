@@ -6125,6 +6125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PALENISKO_LP
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e7bf1a4916b927f4ba5cfb9e27650397, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7bf1a4916b927f4ba5cfb9e27650397, type: 3}
 --- !u!4 &8571914996334183180 stripped

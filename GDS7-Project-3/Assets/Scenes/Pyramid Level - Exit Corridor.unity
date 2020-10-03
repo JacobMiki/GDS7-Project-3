@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: ca1698bc5a11163409ef2ce551967486, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -140,7 +140,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &15978807
 Transform:
@@ -181,13 +181,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -201,7 +201,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15978806}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -259,7 +259,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &17460174
 Transform:
@@ -300,13 +300,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -320,7 +320,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17460173}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -378,7 +378,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &65651095
 Transform:
@@ -419,13 +419,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -439,7 +439,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65651094}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -1357,13 +1357,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1443,7 +1443,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &288199765
 Transform:
@@ -1484,13 +1484,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1504,7 +1504,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288199764}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -1567,7 +1567,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &359621769
 Transform:
@@ -1608,13 +1608,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1628,7 +1628,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359621768}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -1686,7 +1686,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &385054400
 Transform:
@@ -1727,13 +1727,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -1747,7 +1747,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385054399}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -2214,6 +2214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DZIDA
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
 --- !u!43 &664462165
@@ -2397,7 +2401,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &682254083
 Transform:
@@ -2438,13 +2442,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -2458,7 +2462,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682254082}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -2573,6 +2577,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DZIDA (2)
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
 --- !u!1 &771267567 stripped
@@ -2605,13 +2613,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -2874,6 +2882,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
       propertyPath: m_Name
       value: DZIDA (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
@@ -3300,7 +3312,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &918503087
 Transform:
@@ -3341,13 +3353,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -3361,7 +3373,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 918503086}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -3409,6 +3421,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1849052970}
     m_Modifications:
+    - target: {fileID: -8852175922468587595, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -8791635886462695080, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3425,25 +3441,45 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 41
       objectReference: {fileID: 0}
+    - target: {fileID: -7593644715829653318, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -7544876878737751097, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7544876878737751097, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -7462036371361415008, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: -7462036371361415008, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -6672629512355762374, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: -6425032526595628737, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
       value: 42
       objectReference: {fileID: 0}
+    - target: {fileID: -6371000933505293239, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -6060384036406476307, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -6060384036406476307, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -5865163338561875921, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
@@ -3547,16 +3583,24 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5c640947d33ee9b4e941272ba0e058d9, type: 2}
     - target: {fileID: -3633785393430268029, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: -3168529574805235552, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -2994869569963923358, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: -2962005310488024616, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: b0a1b696e992eeb46a22a14f2ad114e4, type: 2}
+    - target: {fileID: -2962005310488024616, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -2827090337414422196, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -3592,6 +3636,10 @@ PrefabInstance:
     - target: {fileID: -2639064179866506031, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -2639064179866506031, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -2397996973257786244, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3637,13 +3685,29 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 8.63
       objectReference: {fileID: 0}
+    - target: {fileID: -1463128404019685860, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: -1435745037420900390, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -1152548939288906719, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: -1152548939288906719, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -1124775913840940428, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -1124775913840940428, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Name
@@ -3653,9 +3717,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -775170420555550193, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -775170420555550193, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -609108784052234872, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3665,9 +3737,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: -594094835925579944, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -492420421572216379, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -492420421572216379, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: -330174914061684867, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
@@ -3705,9 +3785,17 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 83a156828e9d1b34db52e7223b236423, type: 2}
+    - target: {fileID: 624445634990689599, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 915722065669063622, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 915722065669063622, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1066910053003865102, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3731,7 +3819,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 873673e7996336b46996f44794d30c9e, type: 2}
     - target: {fileID: 1958219048711303513, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 1958529666632713821, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3749,6 +3837,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 2502203975881118265, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 2561517202843409489, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -3761,6 +3853,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1e9b5f6c11a7a8c4aa2d931bc92bc33e, type: 2}
+    - target: {fileID: 3332261285661731668, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3569702164322028712, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3773,6 +3869,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 3654518785603020253, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 3832174744766261434, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3783,15 +3883,23 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 873673e7996336b46996f44794d30c9e, type: 2}
     - target: {fileID: 4246911713213437109, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4393602707679685915, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 009a30cab1bb6ff42b51ad65456a0ad2, type: 2}
+    - target: {fileID: 4393602707679685915, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4695666576454475813, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4695666576454475813, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 5490870052100550915, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3805,10 +3913,18 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 98797e98f3f29a5448a4a41215a09d1e, type: 2}
+    - target: {fileID: 5995332338508399803, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5996527983079521406, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f36671f1cc126de439e9fe8e075233f6, type: 2}
+    - target: {fileID: 5996527983079521406, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6058263341307319539, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3820,6 +3936,10 @@ PrefabInstance:
     - target: {fileID: 6378526499621208244, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6378526499621208244, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6449083140272914053, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_LocalScale.x
@@ -3865,6 +3985,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7050772954290902345, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7178390346684107605, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -3873,13 +3997,33 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7230587208582541622, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7367970170381967549, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7469484624682501897, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7772113929931190399, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
       value: 43
       objectReference: {fileID: 0}
+    - target: {fileID: 7978880954067848585, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8051415255134806348, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8051415255134806348, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8304545770963488453, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3893,6 +4037,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dd5994fc3ca34d14890c37824ba00ab6, type: 2}
+    - target: {fileID: 8903256891729901889, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8949806292182953952, guid: 5b763e477f0739044a9959951f83b012, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -3905,6 +4053,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 74b794c667470e040a3c01736ac6f292, type: 2}
+    - target: {fileID: 9203933677680001649, guid: 5b763e477f0739044a9959951f83b012, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b763e477f0739044a9959951f83b012, type: 3}
 --- !u!1 &1059119174
@@ -5553,7 +5705,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1456617167
 Transform:
@@ -5594,13 +5746,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -5614,7 +5766,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1456617166}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -5710,6 +5862,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TARCZA_2
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a2812563737158f429cecad65815020d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2812563737158f429cecad65815020d, type: 3}
 --- !u!1 &1466634287 stripped
@@ -5742,13 +5898,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -5812,6 +5968,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 53bed477d7aa07c4ab72154aceb87309, type: 3}
       propertyPath: m_Name
       value: WAZA_2
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 53bed477d7aa07c4ab72154aceb87309, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53bed477d7aa07c4ab72154aceb87309, type: 3}
@@ -5988,7 +6148,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1575519026
 Transform:
@@ -6029,13 +6189,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -6049,7 +6209,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575519025}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -6120,13 +6280,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -6149,7 +6309,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1606837694
 Transform:
@@ -6190,13 +6350,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -6210,7 +6370,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606837693}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -6281,13 +6441,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -6310,7 +6470,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1613604019
 Transform:
@@ -6351,13 +6511,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -6371,7 +6531,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1613604018}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -7324,7 +7484,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1731521258
 Transform:
@@ -7365,13 +7525,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -7385,7 +7545,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731521257}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -7443,7 +7603,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1768346538
 Transform:
@@ -7484,13 +7644,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -7504,7 +7664,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768346537}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -7562,7 +7722,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1773697350
 Transform:
@@ -7603,13 +7763,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -7623,7 +7783,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773697349}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -7723,6 +7883,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WAZA_3
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 53bed477d7aa07c4ab72154aceb87309, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53bed477d7aa07c4ab72154aceb87309, type: 3}
 --- !u!1001 &1823736632
@@ -7783,6 +7947,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
       propertyPath: m_Name
       value: DZIDA (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada9381581573f449a771d16ff39b7d1, type: 3}
@@ -7862,7 +8030,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1850033749
 Transform:
@@ -7903,13 +8071,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -7923,7 +8091,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1850033748}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -8433,6 +8601,10 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: a2812563737158f429cecad65815020d, type: 3}
       propertyPath: m_Name
       value: TARCZA_1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a2812563737158f429cecad65815020d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2812563737158f429cecad65815020d, type: 3}
@@ -9598,13 +9770,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -9640,13 +9812,13 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 7
-      value: 0
-      inSlope: 0.02801392
-      outSlope: 0.02801392
+      time: 4.998047
+      value: 0.0013427734
+      inSlope: -0.026609933
+      outSlope: -0.026609933
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.052566625
+      inWeight: 0.07208073
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
